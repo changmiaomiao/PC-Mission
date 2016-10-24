@@ -185,7 +185,7 @@ for(var i= 0,len=middleImg.length;i<len;i++){
 }
 
 /*获得具体的介绍歌手信息*/
-/*var forPosition=document.getElementById("forPosition");
+var forPosition=document.getElementById("forPosition");
 var jsForPosition=forPosition.getElementsByClassName("jsForPosition");
 imgLoad.getData(forPosition,"pictures.txt",6);
 for(i=0;i<jsForPosition.length;i++){
@@ -260,7 +260,7 @@ function forIntroduce(ele){
             followH4.style.color="#666";
         }
     }
-}*/
+}
 var forPosition=document.getElementById("forPosition");
 var jsForPosition=forPosition.getElementsByClassName("jsForPosition");
 imgLoad.getData(forPosition,"pictures.txt",6);
