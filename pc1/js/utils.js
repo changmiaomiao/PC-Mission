@@ -552,7 +552,6 @@ var utilsOld={
                 }
             }
         }
-
     },
     getEleByClass:function(strClass,context){
         context = context || document;

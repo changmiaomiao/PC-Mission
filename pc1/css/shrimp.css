@@ -440,204 +440,7 @@ input{
 .middle .forPosition{
     position: relative;
 }
-.introduce{
-    display: none;
-    position: absolute;
-    top:-32px;
-    left:-32px;
-    z-index: 3;
-    padding:6px;
-    width: 332px;
-    height: 220px;
-    background: url("../images/name_card_bg.png");
-}
-.introduce .introduces{
-    width: 100%;
-    border:1px solid #c6cacc;
-    border-radius: 2px;
-    background-color: #fff;
-}
-.introduce .introduces .introduceTop{
-    height: 80px;
-    width: 332px;
-    background-color: #f5f9fa;
-}
-.introduce .introduces .introduceTop .introduceTI{
-    margin: 15px 10px 0 20px ;
-    float: left;
-    width:50px ;
-    height: 50px;
-    border:1px solid #aaa ;
-    border-radius: 2px;
-}
-.introduce .introduces .introduceTop .introduceTI img{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-.introduce .introduces .introduceTop .introduceTopName{
-    float: left;
-    width: 75px;
-}
-.introduce .introduces .introduceTop .introduceTopName a{
-    /*float: left;*/
-    margin-top: 20px;
-    width: 60px;
-    color:#333 ;
-    font-size: 12px;
-    /*line-height: 20px;*/
-}
-.introduce .introduces .introduceTop .introduceTopName span{
-    display: inline-block;
-    margin:0 0 3px 3px;
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-    background: url("../images/icons.png") no-repeat 0 -50px;
-}
-.introduces .introduceTop .introduceTopName .introduceAddress{
-    padding: 2px;
-    font-weight: 500;
-    color: #999;
-    font-size: 12px;
-}
-.introduces .introduceTop .introduceTopName .introduceAddress u{
-    float: left;
-    display: block;
-    width: 14px;
-    height: 16px;
-    background: url("../images/icon%20(1).png") no-repeat -82px -20px;
-}
-.introduces .introduceTop .introduceTopName .introduceAddress .introduceSex{
-    background-position:-112px -20px ;
-}
-.introduces .intNumber{
-    width: 95%;
-    height: 22px;
-    padding: 12px 0 12px 16px;
-}
-.introduces .intNumber h4{
-    height: 22px;
-    line-height: 22px;
-    font-weight: 500;
-    float: left;
-    color: #555;
-    margin-right: 10px;
-}
-.introduces .intNumber i{
-    font-style: normal;/*字体样式*/
-    float: left;
-    width: 20px;
-    height: 22px;
-    line-height: 22px;
-    background-color: #5c7284;
-    text-align: center;
-    margin-right: 3px;
-    border-radius: 3px;
-    color: white;
-}
-.introduces .intFans{
-    float: left;
-    height: 40px;
-    width: 100%;
-    border-top:1px solid #f0f0f0;
-    border-bottom:1px solid #f0f0f0;
-}
-.introduces .intFans li{
-    width: 33%;
-    height: 40px;
-    line-height: 40px;
-}
-.introduces .intFans .intFansCenter{
-    border-left:1px solid #f0f0f0;
-    border-right:1px solid #f0f0f0;
-}
 
-.introduces .intFans h4{
-    padding-left: 32px;
-    float: left;
-    color: #999;
-    font-weight: 500;
-}
-.introduces .intFans i{
-    float: left;
-    padding-left: 5px;
-    font-style: normal;
-    display: block;
-    color: #f60;
-}
-.introduces .intFollow{
-    height: 50px;
-    width: 100%;
-}
-.introduces .intFollow li{
-    margin:12px 0 12px 20px;
-    width: 80px;
-    height: 24px;
-    border:1px solid #ccc;
-    border-radius: 3px;
-   /* text-align: center;*/
-}
-.introduces .intFollow h4{
-    color: #666;
-    padding-left:15px;
-    font-weight: 500;
-    line-height: 24px;
-}
-.introduces .intFollow .follow i{
-    float: left;
-    margin: 3px 3px 0 5px ;
-    width: 18px;
-    height: 18px;
-    background: url("../images/btn_follow_play.png")   0 -60px  ;
-}
-.introduces .intFollow .follow h4{
-    color: #ccc;
-}
-/*.introduces .intFollow .follow .singerVip{
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: url("../images/icons.png") no-repeat 0 -50px;
-}*/
-.introduces .intFollow .follow .followMe{
-    background-position: 0 0;
-}
-.introduces .intFollow .intAttention{
-    float: left;
-    margin: 4px 5px 0 15px;
-    width: 14px;
-    height: 14px;
-    background: url("../images/icon%20(1).png")  -290px -110px;
-}
-.introduce .intTriangle{
-    position: absolute;
-    bottom:-7px;
-    left:40px;
-    width: 14px;
-    height:14px ;
-    background: url("../images/name_card_bg.png") 0 -250px;
-}
-.introduce .intTriangleBottom{
-    background-position: -50px -250px;
-    /*position: absolute;*/
-    left:40px;
-    top:-6px;
-}
-.hiddenBox{
-    width: 140px;
-    height: 140px;
-    position: absolute;
-    z-index: 2;
-}
-.hiddenBox .hidden{
-    display: none;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-color: rgba(0,0,0,.5);
-    /*opacity: 0;*/
-}
 .prints .printsTop .hiddenBox:hover .hidden{
     display: block;
 }
@@ -824,6 +627,7 @@ div.share .shareHidden a:hover .innerShare{
     /*border-bottom:1px solid #ebebeb ;*/
 }
 .nominateHidden .nominateHiddenL{
+    position: relative;
     float: left;
     width: 54%;
 }
@@ -1168,6 +972,16 @@ div.share .shareHidden a:hover .innerShare{
     width: 150px;
     background-color: white;
     border-bottom: none;
+}
+.impRight .discuss .discussChoose li.disChoose0{
+     border-right:1px solid #ededed ;
+ }
+.impRight .discuss .discussChoose li.disChoose1{
+    border-right:1px solid #ededed ;
+    border-left:1px solid #ededed ;
+}
+.impRight .discuss .discussChoose li.disChoose2{
+    border-left:1px solid #ededed ;
 }
 .impRight .discuss .discussChoose li.disChoose span{
     display:inline-block;
@@ -1524,8 +1338,302 @@ div.share .shareHidden a:hover .innerShare{
 
 
 
+/*针对歌手详细介绍部分,因为上面的样式对其有影响*/
+.introduce{
+    display: none;
+    position: absolute;
+    top:-32px;
+    left:-32px;
+    z-index: 3;
+    padding:6px;
+    width: 332px;
+    height: 220px;
+    background: url("../images/name_card_bg.png");
+}
+.introduce .introduces{
+    width: 100%;
+    border:1px solid #c6cacc;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.introduce .introduces .introduceTop{
+    height: 80px;
+    width: 332px;
+    background-color: #f5f9fa;
+}
+.introduce .introduces .introduceTop .introduceTI{
+    margin: 15px 10px 0 20px ;
+    float: left;
+    width:50px ;
+    height: 50px;
+    border:1px solid #aaa ;
+    border-radius: 2px;
+}
+.introduce .introduces .introduceTop .introduceTI img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.introduce .introduces .introduceTop .introduceTopName{
+    float: left;
+    width: 100px;
+}
+.introduce .introduces .introduceTop .introduceTopName a{
+    /*float: left;*/
+    margin-top: 20px;
+    width: 60px;
+    color:#333 ;
+    font-size: 12px;
+    /*line-height: 20px;*/
+}
+.introduce .introduces .introduceTop .introduceTopName span{
+    display: inline-block;
+    margin:0 0 3px 3px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icons.png") no-repeat 0 -50px;
+}
+.introduces .introduceTop .introduceTopName .introduceAddress{
+    padding: 2px;
+    font-weight: 500;
+    color: #999;
+    font-size: 12px;
+}
+.introduces .introduceTop .introduceTopName .introduceAddress u{
+    float: left;
+    display: block;
+    width: 14px;
+    height: 16px;
+    background: url("../images/icon%20(1).png") no-repeat -82px -20px;
+}
+.introduces .introduceTop .introduceTopName .introduceAddress .introduceSex{
+    background-position:-112px -20px ;
+}
+.introduces .intNumber{
+    width: 95%;
+    height: 22px;
+    padding: 12px 0 12px 16px;
+}
+.introduces .intNumber h4{
+    height: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    float: left;
+    color: #555;
+    margin-right: 10px;
+}
+.introduces .intNumber i{
+    font-style: normal;/*字体样式*/
+    float: left;
+    width: 20px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #5c7284;
+    text-align: center;
+    margin-right: 3px;
+    border-radius: 3px;
+    color: white;
+}
+.introduces .intFans{
+    float: left;
+    height: 40px;
+    width: 100%;
+    border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+.introduces .intFans li{
+    width: 33%;
+    height: 40px;
+    line-height: 40px;
+}
+.introduces .intFans .intFansCenter{
+    border-left:1px solid #f0f0f0;
+    border-right:1px solid #f0f0f0;
+}
 
+.introduces .intFans h4{
+    padding-left: 32px;
+    float: left;
+    color: #999;
+    font-weight: 500;
+}
+.introduces .intFans i{
+    float: left;
+    padding-left: 5px;
+    font-style: normal;
+    display: block;
+    color: #f60;
+}
+.introduces .intFollow{
+    height: 50px;
+    width: 100%;
+}
+.introduces .intFollow li{
+    margin:12px 0 12px 20px;
+    width: 80px;
+    height: 24px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    /* text-align: center;*/
+}
+.introduces .intFollow h4{
+    color: #666;
+    padding-left:15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.introduces .intFollow .follow i{
+    float: left;
+    margin: 3px 3px 0 5px ;
+    width: 18px;
+    height: 18px;
+    background: url("../images/btn_follow_play.png")   0 -60px  ;
+}
+.introduces .intFollow .follow h4{
+    color: #ccc;
+}
+/*.introduces .intFollow .follow .singerVip{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icons.png") no-repeat 0 -50px;
+}*/
+.introduces .intFollow .follow .followMe{
+    background-position: 0 0;
+}
+.introduces .intFollow .intAttention{
+    float: left;
+    margin: 4px 5px 0 15px;
+    width: 14px;
+    height: 14px;
+    background: url("../images/icon%20(1).png")  -290px -110px;
+}
+.introduce .intTriangle{
+    position: absolute;
+    bottom:-7px;
+    left:40px;
+    width: 14px;
+    height:14px ;
+    background: url("../images/name_card_bg.png") 0 -250px;
+}
+.introduce .intTriangleBottom{
+    background-position: -50px -250px;
+    /*position: absolute;*/
+    left:40px;
+    top:-6px;
+}
+.hiddenBox{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    z-index: 2;
+}
+.hiddenBox .hidden{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,.5);
+    /*opacity: 0;*/
+}
+/*nominate 下的歌手信息详细介绍*/
+.nominate .nominateHidden .introduce{
+    top:45px;
+    left:330px;
+}
+/*对信息具体介绍时,箭头在下的整个盒子的位置
+.nominate .nominateHidden .introduce{
+    top:-230px;
+    left:330px;
+}*/
+.nominate .nominateHidden .introduces .intFollow h4{
+   padding-left: 10px;
+    margin: 0;
+}
 
+/*回到顶部*/
+.callBack{
+    position: fixed;
+    right:20px;
+    bottom: 30px ;
+    width:38px ;
+    height: 114px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    overflow: hidden;
+}
+.callBack a{
+    width: 38px;
+    height: 38px;
+    font-size: 0;
+}
+.callBack span{
+    width: 38px;
+    height: 32px;
+}
+.callBack a span{
+    display: block;
+    background: url("../images/footer_icon.png") no-repeat 6px  9px;
+}
+.callBack a:hover span{
+    display: none;
+}
+.callBack a:hover{
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+    text-align: center;
+     background-color: #f60;
+ }
+.callBack a.QR .APPQR{
+    display: none;
+    position: absolute;
+    top: -45px;
+    left: -153px;
+    width: 142px ;
+    height: 162px;
+    background-color: #ff6600;
+    border-radius: 3px;
+}
+.callBack a.QR  .APPQR h3{
+    width: 100%;
+    height:30px ;
+    line-height: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+}
+.callBack a.QR .APPQR img{
+    margin-left: 13px;
+    width: 116px;
+    height: 116px;
+
+}
+.callBack a.QR  .APPQR p{
+    position: absolute;
+    top:65px;
+    right: -9px;
+    width: 8px;
+    height: 6px;
+    background-color: #f60;
+    border-radius: 4px/2px;
+}
+.callBack a.QR:hover .APPQR{
+    display: block;
+}
+.callBack a.feedback{
+    border-top:1px solid #ededed;
+    border-bottom:1px solid #ededed;
+}
+.callBack a.feedback span{
+    margin-top: 4px;
+    background-position: 6px -22px;
+}
+.callBack a.callTop span{
+    background-position: 6px -45px;
+}
 
 
 
