@@ -1,0 +1,1642 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Hiragino Sans GB','Microsoft Yahei';
+    font-size: 12px;
+    background-color: #f5f5f5;
+}
+ul,ol,li{
+    list-style: none;
+}
+li{
+    float: left;
+}
+img{
+    vertical-align: top;
+    text-decoration: none;
+    background: url("../images/loading2.gif") no-repeat center;
+}
+a{
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+.clear:after,.clear:before{
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.content{
+    margin: 0 auto;
+    width: 1104px;
+}
+.heard{
+    width: 100%;
+    height:91px;
+}
+.heardTop{
+    width: 100%;
+    height: 60px;
+    background:-webkit-linear-gradient(top,#fa8622,#f57614);
+}
+.heardTop .margin{
+    margin:15px 0 15px 20px;
+}
+.heardTop a{
+    text-align: center;
+    text-shadow: 1px 1px 2px #333;
+    color: #ffffff;
+}
+.heardTop .iconUrl,.iconUrl a{
+    width: 180px;
+    height: 60px;
+}
+.iconUrl a{
+    background: url(../images/default.png) no-repeat;
+}
+.iconUrl a:hover{
+    background-position: 0 -60px;
+}
+.heardTop .heardMusic a{
+    display: block;
+    width: 90px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.heardMusic.color a{
+    background: -webkit-linear-gradient(top,#dc6701,#f57614);
+}
+.heardTop .choose{
+    /*font-family: 'Hiragino Sans GB','Microsoft Yahei';*/
+    border-top:1px solid #db6b16 ;
+    border-bottom:1px solid #db6b16 ;
+    /*height: 28px;*/
+    border-radius: 2px;
+    overflow: hidden;
+}
+.choose .chooseInner li a{
+    height: 28px;
+    line-height: 28px;
+    width: 60px;
+    color: #fff;
+    border-right:1px solid #db6b16 ;
+}
+.choose .chooseInner .border{
+    border-left:1px solid #db6b16 ;
+}
+.choose .chooseInner li a:hover{
+    background: -webkit-linear-gradient(top,#d65c15,#f57614);
+}
+.heardTop .input{
+    position: relative;
+}
+.heardTop .input input{
+    border:1px solid #db6816 ;
+    border-radius: 3px;
+    width:198px ;
+    /*width:228px ;*/
+    height:28px ;
+    padding-left: 30px;
+    /*box-sizing: content-box;*/
+}
+.heardTop .input span{
+    position: absolute;
+    top:2px;
+    left: 2px;
+    display: block;
+    width: 20px; ;
+    height: 20px;
+    background: url("../images/header_icon.png") no-repeat 0 -48px;
+}
+.heardTop .reg a,.heardTop .login a{
+    width: 58px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #ca671b;
+}
+.heardTop .reg a,.heardTop .login{
+    border: 1px solid #b25415;
+    border-radius: 3px;
+}
+.heardTop .login{
+    margin: 15px 0 15px 6px ;
+}
+.heardTop .login .blog,.heardTop .login .qq{
+    width: 28px;
+    height: 28px;
+    border-left:  1px solid #b25415;
+    background: url(../images/unlogin_icon.png) #ca671b no-repeat;
+    /*background-color: #ca671b;*/
+}
+/*.heardTop .login .blog:hover,.heardTop .login .qq:hover{
+      background:-webkit-linear-gradient(top,#c15e12,#b85509) ;
+  }*/
+.heardTop .login .blog{
+    background-position: -3px -3px;
+}
+.heardTop .login .qq{
+    background-position: -35px -4px;
+}
+.heardTop .reg a:hover{
+    background:-webkit-linear-gradient(top,#c15e12,#b85509);
+}
+.heardTop .login a:hover{
+    background-color:#b85509;
+}
+.heardBottom{
+    height: 30px;
+    background-color: #f0f0f0;
+    border:1px solid #ccc;
+}
+.heardBottom ul{
+   margin-left: 90px;
+}
+.heardBottom ul li{
+    height: 30px;
+    line-height: 30px;
+    margin-right: 30px;
+}
+.heardBottom ul li a{
+    color: #333;
+}
+.heardBottom ul li a:hover,.heardBottom .hot{
+    color: #f60;
+}
+.heardBottom ol{
+    float: right;
+}
+.heardBottom ol span{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url("../images/header_icon.png") no-repeat -68px -44px;
+}
+.heardBottom ol .play span{
+    background-position: -22px -44px;
+}
+.heardBottom ol .down span {
+    background-position: -44px -44px;
+}
+.heardBottom ol a{
+    float: left;
+    padding-right: 24px;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    font-weight: 900;
+}
+.heardBottom ol li:hover a{
+    color: #f60;
+}
+.heardBottom ol .vip:hover span{
+    background-position: -68px -68px;
+}
+.heardBottom ol .play:hover span{
+    background-position: -22px -68px;
+}
+.heardBottom ol .down:hover span{
+    background-position: -44px -68px;
+}
+/*heard end*/
+.important{
+    margin-top:19px ;
+}
+.important .impLeft{
+    display: inline-block;
+    padding:15px;
+    width: 740px;
+    background-color: #fff;
+    border:1px solid #ebebeb;
+    border-radius: 3px;
+}
+.impLeft .rotate{
+    position: relative;
+    height: 170px;
+    width: 740px;
+    background: url("../images/loading2.gif") no-repeat center;
+}
+.rotate a{
+    /*opacity:0;*/
+    display: none;
+}
+ .rotate img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rotate .focus{
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    z-index: 1;
+    padding: 5px 5px 5px 0;
+    background-color: rgba(0,0,0,.1);
+    border-radius:9px;
+    /**/
+}
+.rotate .focus:hover{
+    background-color: rgba(0,0,0,.3);
+}
+.rotate .focus li{
+    margin-left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+   background-color: #fff;
+}
+.rotate .focus .focusBg{
+    background-color: #f60;
+}
+.impLeft .middle {
+}
+.middle .middleList{
+    height: 54px;
+}
+.middle .middleList h3{
+    float: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 54px;
+    color: #333;
+}
+.middle .middleList p{
+    float: left;
+    line-height: 54px;
+    color: #f60;
+}
+.middle .middleList ul{
+    float: right;
+}
+.middle .middleList ul li{
+    color: #eeebee;
+    padding: 15px 0;
+}
+.middle .middleList ul li a{
+    float: left;
+    margin: 0 10px;
+    color: #333333;
+}
+.middle .middleList ul li .underline{
+    border-bottom: 2px solid #333;
+}
+.middle .middleList ul li a:hover{
+    border-bottom: 2px solid #333;
+}
+.middle .middleImg div{
+    float: left;
+}
+.middle .middleImg .printOne{
+    width: 140px;
+    margin-left: 10px;
+}
+.middle .middleImg .printOne div{
+    background-color: #3a3935;
+    position: relative;
+    /*width: 134px;*/
+}
+.middleImg .printOne .printTop{
+    padding: 3px;
+    height: 134px;
+}
+.middle .middleImg .printOne img{
+    float: left;
+    width: 50%;
+    height: 50%;
+   /* background: url("../images/loading2.gif") no-repeat center;*/
+}
+.middle .middleImg b{
+    position: absolute;
+    top:47px;
+    left:47px;
+    width: 44px;
+    height: 44px;
+    background: url("../images/play_icon.png") no-repeat -2px -2px;
+}
+.middle .middleImg b:hover{
+    background-position: -50px -2px;
+}
+.middle .middleImg p{
+    color: #999;
+    width: 128px;
+    padding: 6px;
+    background-color: #3a3935;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*width: 140px;*/
+}
+.middle .middleImg .printOne .printT{
+    height: 168px;
+}
+.middleImg .printOne h3{
+    height: 68px;
+    line-height: 68px;
+    font-size:18px;
+    text-align: center;
+    font-weight: 500;
+}
+.middleImg{
+    margin-left: -10px;
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+.middleImg .middleLarge{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 2250px;
+}
+.middleImg.clear span{
+    position: absolute;
+    z-index: 2;
+    left: 724px;
+    top:50px;
+    width:27px ;
+    height: 50px;
+    background: url("../images/page_icon.png") no-repeat;
+}
+.middleImg.clear .middleImgL{
+    background-position: -27px 0;
+    left: 10px;
+}
+.middleImg.clear .middleImgL:hover {
+    background-position: -27px -50px;
+}
+.middleImg.clear .middleImgR:hover {
+    background-position: 0 -50px;
+}
+.prints{
+    position: relative;
+    /*overflow: hidden;*/
+    width: 140px;
+    height: 230px;
+}
+.prints>p{
+    padding: 0;
+}
+.prints .printsTop{
+    position: relative;
+}
+.prints .printsTop img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    z-index: 1;
+}
+.prints .printsTop p{
+    position: absolute;
+    top:140px;
+    left: 0;
+    width: 130px;
+    padding:4px 5px;
+    background-color: #f5f5f5;
+}
+.prints .cabaret,.prints .singer{
+    position: absolute;
+    top:206px;
+   height: 24px;
+   background-color: #fff;
+}
+.prints .singer{
+    color: #999;
+    overflow: hidden;
+}
+.prints .singer:hover{
+    text-decoration: underline;
+}
+.middleImg .prints a i{
+   float: right;
+    margin-left: 2px;
+    width: 16px;
+    height: 16px;
+    background: url("../images/glory_icon.png") no-repeat -53px -185px;
+}
+.prints .cabaret{
+    top:182px;
+    color: #333;
+    font-size: 14px;
+}
+.prints .singer img{
+    /*float: left;*/
+    width:15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.prints .singer .singerVip{
+    background: url("../images/icons.png") no-repeat 0 -50px;
+}
+.middle .forPosition{
+    position: relative;
+}
+
+.prints .printsTop .hiddenBox:hover .hidden{
+    display: block;
+}
+.hiddenBox .hidden .hiddenPlay{
+   position: absolute;
+    bottom:6px;
+    right: 6px;
+    width:24px ;
+    height: 26px;
+    background: url("../images/play_icon.png") no-repeat 0 -46px;
+}
+.hiddenBox .hidden .hiddenPlay:hover{
+    background-position: -24px -46px;
+}
+div.share{
+    position: relative;
+    margin: 6px;
+    width: 30px;
+    height: 14px;
+    border-radius:3px;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+div.share a{
+    margin: 0;
+    float: left;
+    width: 15px;
+    height: 14px;
+    background:url("../images/icon%20(2).png") no-repeat  -4px -125px;
+}
+div.share .shareTriangle{
+    background-position: -149px -53px;
+}
+div.share .shareHidden{
+    display: none;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 5px 0;
+    width: 85px;
+    height: 75px;
+    background-color: #fff;
+    border:1px solid #555555;
+    border-radius: 3px;
+    /*z-index: 10;*/
+}
+div.share:hover .shareHidden{
+    display: block;
+}
+div.share .shareHidden a{
+    width: 85px;
+    height: 25px;
+    line-height: 25px;
+    color:#333;
+    background: #fff;
+}
+div.share .shareHidden a:hover{
+    background-color: #f60;
+    color: #fff;
+}
+div.share .shareHidden span{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+    background:url("../images/icon%20(2).png") no-repeat  6px -119px;
+}
+div.share .shareHidden .innerAdd{
+    background-position: -19px -119px;
+}
+div.share .shareHidden .innerShare{
+    background-position: -43px -119px;
+}
+div.share .shareHidden a:hover .innerHeart{
+    background-position: 6px -143px;
+}
+div.share .shareHidden a:hover .innerAdd{
+    background-position: -19px -143px;
+}
+div.share .shareHidden a:hover .innerShare{
+    background-position: -43px -143px;
+}
+.middleImg .prints .printsTop .hiddenTow{
+    display: none;
+    width: 100px;
+    height:100px;
+    padding:  32px 20px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(100,100,100,.3);
+    cursor: pointer;
+}
+.middleImg .prints .printsTop .hiddenTow h4,.middleImg .prints .printsTop .hiddenTow a{
+    color:#fff ;
+    font-weight: 500;
+    font-size: 12px;
+}
+.middleImg .prints{
+    margin-left: 10px;
+}
+.middleImg .prints .printsTop .hiddenTow a{
+    margin: 18px auto;
+    width: 68px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #999;
+}
+.middleImg .prints .printsTop .hiddenTow a:hover{
+    background-color: #888888;
+}
+.middle .centerImg{
+    width: 753px;
+    height: 60px;
+}
+.middle .centerImg a{
+    margin-right:13px;
+    float: left;
+    width: 175px;
+    height: 60px;
+}
+.middle .centerImg img{
+    width: 100%;
+    height: 100%;
+}
+.middle .nominate{
+    width: 100%;
+}
+.middle .nominate li{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.middle .nominate .nominateOne{
+    border-top: 1px solid #eee;
+}
+.middle .nominate .nominateLeft{
+    float: left;
+    width: 55%;
+    line-height: 28px;
+}
+.middle .nominate h4{
+    margin:0 5px;
+    float: left;
+    font-weight: 500;
+    color: #333;
+}
+.middle .nominate p{
+    color:#999;
+}
+.middle .nominate .nominateRight{
+    float: right;
+    width: 45%;
+    line-height: 24px;
+}
+.middle .nominate .nominateRight h4{
+    width: 266px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.middle .nominate li:hover .nominateHidden{
+    display: block;
+}
+.middle .nominate li:hover .nominateOther{
+    display: none;
+}
+.middle .nominate .nominateRight p{
+    float: right;
+    padding-right: 5px;
+}
+/*.middle .nominate .nominateOther{
+
+    border-bottom: 1px solid #eee;
+ }*/
+
+.middle .nominate .nominateHidden{
+    width:100%;
+    /*height: 400%;*/
+    display: none;
+    height:93px  ;
+    background-color:#f5f5f5;
+    /*border-bottom:1px solid #ebebeb ;*/
+}
+.nominateHidden .nominateHiddenL{
+    position: relative;
+    float: left;
+    width: 54%;
+}
+.nominateHidden .nominateHiddenL img{
+    float: left;
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+}
+.nominateHidden .nominateHiddenL>a{
+    float: left;
+    margin-top:10px;
+    width:170px;
+}
+.nominateHidden .nominateHiddenL .nominateSing{
+    font-size: 14px;
+    color: #333;
+}
+.nominateHidden .nominateHiddenL .nominateSinger{
+    float: left;
+    color: #999;
+}
+.nominateHidden .nominateHiddenR{
+    margin-top: 8px;
+    float: right;
+    width: 45%;
+}
+.nominateHidden .nominateHiddenR>h4{
+    margin-left: 4px;
+    width: 80%;
+}
+.nominateHidden .nominateHiddenR>p{
+    float: right;
+    width: 18%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.nominateHidden .nominateHiddenL .share ul li{
+    border:none;/*上面元素影响*/
+}
+.nominateHidden .nominateHiddenL .hiddenPlay{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: -22px;
+
+}
+.nominateHidden .nominateHiddenL .hiddenPlay img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 3px;
+}
+ .nominateHidden .nominateHiddenL .share{
+    float: left;
+    margin-top: -18px;
+
+}
+.important .impLeft .key-play a{
+    width: 88px;
+    height: 30px;
+    background-color: #f60;
+    margin:15px 0 0 10px ;
+    border-radius: 3px;
+    color: white;
+    line-height: 30px;
+}
+.important .impLeft .key-play a:hover{
+    background-color: #e55800;
+}
+.important .impLeft .key-play span{
+    display: inline-block;
+    margin:0 6px 0 12px ;
+    width: 10px;
+    height: 12px;
+    vertical-align: middle;
+    background: url("../images/play_icon.png") no-repeat -56px -79px;
+}
+/*主体右边的部分*/
+.Padding{
+    padding:0 15px ;
+    border-radius: 3px;
+    border:1px solid #ebebeb;
+    margin-top: 20px;
+    background-color: white;
+}
+.impRight{
+    float: right;
+}
+.impRight .shrimp-share{
+    /*margin: ;*/
+    position: relative;
+    width: 298px;
+    height:184px ;
+    border:1px solid #ebebeb;
+    background: url("../images/unlogin_mobile.jpg") no-repeat;
+    background-size: 100%;
+    border-radius: 3px;
+}
+.impRight .shrimp-share a{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    color: white;
+}
+.impRight .shrimp-share .iPhone,.impRight .shrimp-share .Android{
+    width: 110px;
+    height: 36px;
+    border-radius: 3px;
+    line-height: 18px;
+}
+.impRight .shrimp-share a span{
+    float: left;
+    /*vertical-align: top;*/
+    width:36px ;
+    height: 36px;
+    background: url("../images/unlogin_icon.png") no-repeat;
+}
+
+.impRight .shrimp-share .iPhone{
+    top:70px;
+    left:160px;
+    background-color:#4398de ;
+}
+.impRight .shrimp-share .Android{
+    top:124px;
+    left:160px;
+    background-color:#7ca627 ;
+}
+.impRight .shrimp-share .Android span{
+    background-position: -32px -30px ;
+}
+.impRight .shrimp-share .iPhone span{
+    background-position:0 -30px ;
+}
+.impRight .shrimp-Login{
+    margin-top: 20px;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    background: white;
+}
+.impRight .shrimp-Login .loginTop{
+    width: 100%;
+
+    border-bottom:1px solid #ebebeb;
+}
+.impRight .shrimp-Login .loginTop p{
+    float: left;
+    margin-left: 15px;
+    height: 80px;
+    line-height: 80px;
+}
+.impRight .shrimp-Login .loginTop a{
+    float: right;
+    margin: 20px 10px 0 0;
+    width: 42px;
+    height: 42px;
+    background: url("../images/TB1eZrpMVXXXXXIXXXXXXXXXXXX-42-84.jpg") no-repeat;
+}
+.impRight .shrimp-Login .loginTop a:hover{
+    background-position:0 -42px ;
+}
+.impRight .shrimp-Login .loginBottom{
+    background-color: #fcfcfc;
+}
+.impRight .shrimp-Login .loginBottom>a{
+    float: left;
+    width: 44px;
+    margin:8px 15px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ff6600;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+.impRight .shrimp-Login .loginBottom p{
+    float: right;
+    margin: 16px 15px 0 0;
+    color: #333;
+}
+.impRight .shrimp-Login .loginBottom p a{
+    float: right;
+    color: #f60;
+}
+.impRight .shrimp-Login .loginBottom p a:hover{
+    text-decoration: underline;
+}
+.impRight .musician .musicianTop p{
+    height:40px ;
+    line-height:40px ;
+    float: left;
+    color: #333333;
+}
+.impRight .musician .musicianTop span{
+    float: right;
+    margin-top: 15px;
+    width: 22px;
+    height: 20px;
+    background: url("../images/icon.png") no-repeat;
+}
+.impRight .musician span:hover{
+    background-position:0 -22px ;
+}
+.impRight .musician .musicianMiddle{
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+.impRight .musician .musicianMiddle .middle-top{
+    margin-top: 20px;
+    position: relative;
+}
+.impRight .musician .musicianMiddle img{
+    width: 270px;
+    height: 270px;
+}
+.impRight .musician .musicianMiddle .musician-date{
+    position: absolute;
+    top:-7px;
+    left: 8px;
+    width: 70px;
+    height: 74px;
+    background: url("../images/icon.png")-40px 0 ;
+}
+.impRight .musician .musicianMiddle .musician-date li{
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+    display: block;
+    font-weight: 900;
+}
+.impRight .musician .musicianMiddle .middle-bottom p {
+    width: 50%;
+    height: 40px;
+    background-color: #f5f5f5;
+    float: left;
+    text-align: center;
+}
+.impRight .musician .musicianMiddle .middle-bottom p a{
+    display: inline-block;
+    width: 27px ;
+    height: 25px;
+    margin-top: 5px;
+    background: url("../images/icon.png") no-repeat 0 -166px;
+}
+.impRight .musician .musicianMiddle .middle-bottom .middle-heart{
+    border-right: 1px solid #ebebeb;
+    box-sizing: border-box;
+}
+.musicianMiddle .middle-bottom .middle-heart a:hover{
+    background-position: 0 -197px;
+}
+.musicianMiddle .middle-bottom .middle-share a{
+    background-position: 0 -40px;
+}
+.musicianMiddle .middle-bottom .middle-share a:hover{
+    background-position: 0 -66px;
+}
+.musicianMiddle .middle-singer{
+    padding: 10px 0 ;
+    border-bottom:1px solid #ebebeb ;
+}
+.musicianMiddle .middle-singer a,.musicianMiddle .middle-singer p{
+    height: 20px;
+    line-height: 20px;
+    color: #999999;
+}
+.musicianMiddle .middle-singer a{
+    display: inline-block;
+}
+.musicianMiddle .middle-singer .singer{
+    color: #333333;
+}
+.musicianMiddle .middle-singer a:hover{
+    text-decoration: underline;
+    text-decoration-color: #333333;
+}
+.musician .middleBottom a{
+    margin:10px 0 ;
+    width: 100%;
+    height:30px ;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #f60;
+    border-radius: 3px;
+}
+.impRight .recommend p{
+    height: 40px;
+    line-height: 40px;
+    color:#333;
+    text-align: center;
+    border-bottom:1px solid #ebebeb ;
+}
+.impRight .recommend .recommend-img{
+    float: left;
+    padding-top:10px;
+    width: 280px;
+    margin-left: -12px;
+}
+.impRight .recommend .recommend-img li{
+    width: 55px;
+    height:90px ;
+    margin-left: 15px;
+}
+.impRight .recommend .recommend-img li a,.impRight .recommend .recommend-img li img{
+    width: 55px;
+    height:55px ;
+}
+.impRight .recommend .recommend-img li span{
+    display: block;
+    width: 55px;
+    height:24px ;
+    line-height:24px ;
+    color: #999;
+    text-align: center;
+}
+.impRight .discuss{
+    width: 300px;
+    border-radius: 3px;
+    border:1px solid #ebebeb;
+    margin-top: 20px;
+    background-color: white;
+
+}
+.impRight .discuss .discussChoose{
+
+
+}
+.impRight .discuss .discussChoose li{
+    width:74px ;
+    height: 41px;
+    background-color: #fcfcfc;
+    line-height: 41px;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+}
+.impRight .discuss .discussChoose li.disChoose{
+    width: 150px;
+    background-color: white;
+    border-bottom: none;
+}
+.impRight .discuss .discussChoose li.disChoose0{
+     border-right:1px solid #ededed ;
+ }
+.impRight .discuss .discussChoose li.disChoose1{
+    border-right:1px solid #ededed ;
+    border-left:1px solid #ededed ;
+}
+.impRight .discuss .discussChoose li.disChoose2{
+    border-left:1px solid #ededed ;
+}
+.impRight .discuss .discussChoose li.disChoose span{
+    display:inline-block;
+    height: 100%;
+    color: #f60;
+}
+.impRight .discuss .discussChoose li span{
+    display: none;
+}
+.impRight .discuss .discussList li{
+    display: none;
+    padding:12px 14px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.impRight .discuss .discussList li p{
+    height: 30px;
+    line-height:30px ;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.impRight .discuss .discussList li.disShow{
+    display: block;
+}
+.impRight .discuss .discussList li p a{
+    float: right;
+    color: #999999;
+}
+.impRight .discuss .discussList li p a span{
+    display: none;
+}
+.impRight .discuss .discussList li p:hover a{
+    display: none;
+}
+.impRight .discuss .discussList li p:hover{
+    text-decoration: underline;
+}
+.impRight .discuss .discussList li p span{
+    display: none;
+    height: 22px;
+    line-height: 22px;
+    float: right;
+    padding-left:5px;
+    width: 70px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 3px;
+    background-color: #f60;
+}
+.impRight .discuss .discussList li p:hover span{
+    display: block;
+}
+.impRight .report{
+    display: block;
+    padding: 0;
+    width:100% ;
+    height: 52px;
+    background: url("../images/14041087617369.png") no-repeat;
+}
+.impRight .report:hover{
+    background-position: 0 -52px;
+}
+/*important end*/
+.content-bottom{
+    margin-top: 30px;
+}
+.content-bottom .outfit{
+    height: 42px;
+    line-height: 42px;
+    border-bottom:1px solid #ebebeb;
+    border-top: 2px solid #333;
+    background-color: white;
+}
+.content-bottom .outfit a{
+    display: block;
+    margin: 13px 18px;
+    font-size: 16px;
+    height: 16px;
+    line-height:16px;
+    color: #333;
+}
+.content-bottom .outfit li.outfitColor{
+    background-color: #333;
+}
+.content-bottom .outfit li.outfitColor a{
+    color: white;
+}
+.content-bottom .outfit li.outfitRight {
+    float: right;
+}
+.content-bottom .outfit li.outfitRight a{
+    margin:6px 10px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/personal_icon.png") no-repeat;
+    border-radius: 2px;
+}
+.content-bottom .outfit li.outfitRight a:hover{
+    background-position: -32px 0;
+}
+.content-bottom .gap{
+    position: relative;
+    margin-top: 20px ;
+    width: 100%;
+    height: 100%;
+}
+.content-bottom .gap .prints{
+    float: left;
+    margin-left: 12px;
+    width:205px ;
+    height: 300px;
+    border:1px solid #ededed;
+    border-radius: 3px;
+}
+.content-bottom .gap .prints .singer{
+    top:234px;
+    left:10px;
+}
+.content-bottom .gap .prints .cabaret{
+    top:208px;
+    left:10px;
+}
+.content-bottom .gap .prints .prints-bottom P{
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    padding:0 5px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #333;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+.content-bottom .gap .prints .prints-bottom i{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    font-style: normal;
+    color: #999;
+}
+.content-bottom .gap .prints .printsTop{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.content-bottom .gap .prints .printsTop img{
+    margin: 10px;
+    width: 185px;
+    height: 185px;
+}
+.content-bottom .gap .prints .printsTop .hiddenBox{
+    margin: 10px;
+    width: 185px;
+    height: 185px;
+}
+.content-bottom .gap .hiddenBox .hidden .share{
+    margin:0;
+    top:6px;
+    left:6px
+}
+/*content end*/
+.about{
+    margin-top: 30px;
+
+    width: 100%;
+    background-color: white;
+    border-top:1px solid #e6e6e6 ;
+}
+.about .aboutLeft{
+    float: left;
+    height: 100%;
+}
+.about .aboutLeft ul{
+    float: left;
+    margin-top: 12px;
+    width: 130px;
+    height: 100%;
+}
+.about .aboutLeft ul li{
+    width: 100%;
+    height:20px ;
+    line-height: 20px;
+
+}
+.about .aboutLeft ul li a{
+    color:#999 ;
+}
+.about .aboutLeft ul li a:hover {
+    text-decoration: underline;
+}
+.about .aboutLeft ul li.about-title{
+    height:30px ;
+    line-height: 30px;
+    color: #666;
+}
+.about .aboutRight{
+    float: right;
+}
+.about .aboutRight p{
+    float: left;
+    margin: 30px 15px 0 0;
+    height: 20px;
+    line-height: 20px;
+    color: #999999;
+}
+.about .aboutRight ol{
+    float: left;
+    margin-top: 20px;
+    width: 360px;
+}
+.about .aboutRight ol li a{
+    width:40px ;
+    height: 40px;
+    border:1px solid #e5e5e5 ;
+    margin: 3px 0 0 3px;
+    background: url("../images/partners_icon.jpg") no-repeat;
+}
+/*.about .aboutRight ol li a img{
+    width: 100%;
+    height: 100%;
+}*/
+.about .linkCon{
+    margin-top:20px;
+    padding:0 10px;
+    width: 100%;
+    height: 70px ;
+    border-top:1px dashed #ccc;
+    border-bottom:1px dashed #ccc;
+    box-sizing: border-box;
+}
+.about .linkCon a{
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    color: #999;
+}
+.about .linkCon a:after{
+    display: block;
+    float: right;
+    margin:10px 11px;
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: #eee;
+}
+.about .linkCon a.lineNone:after{
+    display: none;
+}
+.about .lastCon{
+    width: 100%;
+    padding: 15px  10px 20px;
+    color: #999999;
+    box-sizing: border-box;
+}
+.about .lastCon .lastLeft{
+    float: left;
+}
+.about .lastCon .lastLeft p{
+    float: left;
+
+    height: 16px;
+    line-height: 16px;
+}
+.about .lastCon .lastLeft a{
+    float: left;
+    margin-left: 10px;
+    font-size: 0;
+    width: 16px ;
+    height: 16px;
+    background: url("../images/sync-ico_v15.gif")  no-repeat 0 -16px;
+}
+.about .lastCon .lastLeft a.renRen{
+    background-position: 0 -80px;
+}
+.about .lastCon .lastLeft a.qzone{
+    background-position: 0 -144px;
+}
+.about .lastCon .lastLeft a.tQQ{
+     background-position: 0 -272px;
+ }
+.about .lastCon .lastLeft a.douBan{
+    background-position: 0 -208px;
+}
+.about .lastCon .lastLeft a.webo:hover{
+    background-position: 0 0;
+}
+.about .lastCon .lastLeft a.renRen:hover{
+    background-position: 0 -64px;
+}
+.about .lastCon .lastLeft a.qzone:hover{
+    background-position: 0 -128px;
+}
+.about .lastCon .lastLeft a.tQQ:hover{
+    background-position: 0 -256px;
+}
+.about .lastCon .lastLeft a.douBan:hover{
+    background-position: 0 -192px;
+}
+.about .lastCon .lastRight{
+    float: right;
+}
+.about .lastCon .lastRight .copy-left{
+    float: left;
+}
+.about .lastCon .lastRight .copy-left p{
+
+}
+.about .lastCon .lastRight .copy-left p span{
+     /*width: ;*/
+     float: left;
+ }
+.about .lastCon .lastRight .copy-left p span.copy-margin{
+   margin-right: 3px;
+}
+.about .lastCon .lastRight .copy-left p a{
+    float: left;
+    color: #999999;
+    margin-right: 3px;
+}
+.about .lastCon .lastRight .copy-left p a:hover{
+    text-decoration: underline;
+}
+.about .lastCon .lastRight .copy-left p i{
+    float: left;
+    display: block;
+    width: 130px;
+    height: 20px;
+   background: url("../images/xiami_motto.png") no-repeat 15px 0;
+}
+.about .lastCon .lastRight .copy-left p.coBottom{
+    float: right;
+}
+.about .lastCon .lastRight .copy-left p.coBottom a,.about .lastCon .lastRight .copy-left p.coBottom .span{
+    margin-right: 10px;
+}
+.about .lastCon .lastRight .copy-left p.coBottom .span{
+    display: block;
+
+}
+.about .lastCon .lastRight .copy-right{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+/*针对歌手详细介绍部分,因为上面的样式对其有影响*/
+.introduce{
+    display: none;
+    position: absolute;
+    top:-32px;
+    left:-32px;
+    z-index: 3;
+    padding:6px;
+    width: 332px;
+    height: 220px;
+    background: url("../images/name_card_bg.png");
+}
+.introduce .introduces{
+    width: 100%;
+    border:1px solid #c6cacc;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.introduce .introduces .introduceTop{
+    height: 80px;
+    width: 332px;
+    background-color: #f5f9fa;
+}
+.introduce .introduces .introduceTop .introduceTI{
+    margin: 15px 10px 0 20px ;
+    float: left;
+    width:50px ;
+    height: 50px;
+    border:1px solid #aaa ;
+    border-radius: 2px;
+}
+.introduce .introduces .introduceTop .introduceTI img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.introduce .introduces .introduceTop .introduceTopName{
+    float: left;
+    width: 100px;
+}
+.introduce .introduces .introduceTop .introduceTopName a{
+    /*float: left;*/
+    margin-top: 20px;
+    width: 60px;
+    color:#333 ;
+    font-size: 12px;
+    /*line-height: 20px;*/
+}
+.introduce .introduces .introduceTop .introduceTopName span{
+    display: inline-block;
+    margin:0 0 3px 3px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icons.png") no-repeat 0 -50px;
+}
+.introduces .introduceTop .introduceTopName .introduceAddress{
+    padding: 2px;
+    font-weight: 500;
+    color: #999;
+    font-size: 12px;
+}
+.introduces .introduceTop .introduceTopName .introduceAddress u{
+    float: left;
+    display: block;
+    width: 14px;
+    height: 16px;
+    background: url("../images/icon%20(1).png") no-repeat -82px -20px;
+}
+.introduces .introduceTop .introduceTopName .introduceAddress .introduceSex{
+    background-position:-112px -20px ;
+}
+.introduces .intNumber{
+    width: 95%;
+    height: 22px;
+    padding: 12px 0 12px 16px;
+}
+.introduces .intNumber h4{
+    height: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    float: left;
+    color: #555;
+    margin-right: 10px;
+}
+.introduces .intNumber i{
+    font-style: normal;/*字体样式*/
+    float: left;
+    width: 20px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #5c7284;
+    text-align: center;
+    margin-right: 3px;
+    border-radius: 3px;
+    color: white;
+}
+.introduces .intFans{
+    float: left;
+    height: 40px;
+    width: 100%;
+    border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+.introduces .intFans li{
+    width: 33%;
+    height: 40px;
+    line-height: 40px;
+}
+.introduces .intFans .intFansCenter{
+    border-left:1px solid #f0f0f0;
+    border-right:1px solid #f0f0f0;
+}
+
+.introduces .intFans h4{
+    padding-left: 32px;
+    float: left;
+    color: #999;
+    font-weight: 500;
+}
+.introduces .intFans i{
+    float: left;
+    padding-left: 5px;
+    font-style: normal;
+    display: block;
+    color: #f60;
+}
+.introduces .intFollow{
+    height: 50px;
+    width: 100%;
+}
+.introduces .intFollow li{
+    margin:12px 0 12px 20px;
+    width: 80px;
+    height: 24px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    /* text-align: center;*/
+}
+.introduces .intFollow h4{
+    color: #666;
+    padding-left:15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.introduces .intFollow .follow i{
+    float: left;
+    margin: 3px 3px 0 5px ;
+    width: 18px;
+    height: 18px;
+    background: url("../images/btn_follow_play.png")   0 -60px  ;
+}
+.introduces .intFollow .follow h4{
+    color: #ccc;
+}
+/*.introduces .intFollow .follow .singerVip{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icons.png") no-repeat 0 -50px;
+}*/
+.introduces .intFollow .follow .followMe{
+    background-position: 0 0;
+}
+.introduces .intFollow .intAttention{
+    float: left;
+    margin: 4px 5px 0 15px;
+    width: 14px;
+    height: 14px;
+    background: url("../images/icon%20(1).png")  -290px -110px;
+}
+.introduce .intTriangle{
+    position: absolute;
+    bottom:-7px;
+    left:40px;
+    width: 14px;
+    height:14px ;
+    background: url("../images/name_card_bg.png") 0 -250px;
+}
+.introduce .intTriangleBottom{
+    background-position: -50px -250px;
+    /*position: absolute;*/
+    left:40px;
+    top:-6px;
+}
+.hiddenBox{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    z-index: 2;
+}
+.hiddenBox .hidden{
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,.5);
+    /*opacity: 0;*/
+}
+/*nominate 下的歌手信息详细介绍*/
+.nominate .nominateHidden .introduce{
+    top:45px;
+    left:330px;
+}
+/*对信息具体介绍时,箭头在下的整个盒子的位置
+.nominate .nominateHidden .introduce{
+    top:-230px;
+    left:330px;
+}*/
+.nominate .nominateHidden .introduces .intFollow h4{
+   padding-left: 10px;
+    margin: 0;
+}
+
+/*回到顶部*/
+.callBack{
+    position: fixed;
+    right:20px;
+    bottom: 30px ;
+    width:38px ;
+    height: 114px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    overflow: hidden;
+}
+.callBack a{
+    width: 38px;
+    height: 38px;
+    font-size: 0;
+}
+.callBack span{
+    width: 38px;
+    height: 32px;
+}
+.callBack a span{
+    display: block;
+    background: url("../images/footer_icon.png") no-repeat 6px  9px;
+}
+.callBack a:hover span{
+    display: none;
+}
+.callBack a:hover{
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+    text-align: center;
+     background-color: #f60;
+ }
+.callBack a.QR .APPQR{
+    display: none;
+    position: absolute;
+    top: -45px;
+    left: -153px;
+    width: 142px ;
+    height: 162px;
+    background-color: #ff6600;
+    border-radius: 3px;
+}
+.callBack a.QR  .APPQR h3{
+    width: 100%;
+    height:30px ;
+    line-height: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+}
+.callBack a.QR .APPQR img{
+    margin-left: 13px;
+    width: 116px;
+    height: 116px;
+
+}
+.callBack a.QR  .APPQR p{
+    position: absolute;
+    top:65px;
+    right: -9px;
+    width: 8px;
+    height: 6px;
+    background-color: #f60;
+    border-radius: 4px/2px;
+}
+.callBack a.QR:hover .APPQR{
+    display: block;
+}
+.callBack a.feedback{
+    border-top:1px solid #ededed;
+    border-bottom:1px solid #ededed;
+}
+.callBack a.feedback span{
+    margin-top: 4px;
+    background-position: 6px -22px;
+}
+.callBack a.callTop span{
+    background-position: 6px -45px;
+}
+
+
+
+
+
+
