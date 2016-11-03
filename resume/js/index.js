@@ -93,12 +93,18 @@ var flower=(function(){
         var span=flower.querySelectorAll("span");
         span.forEach(function(item,index){
             item.className="flower"+ran(1,6);
-            with (item.style){
-                height=width=ran(40,60)+"px";
-                left=ran(0,widthDoc)+"px";
-                top=ran(1,30)+"px";
-
+            try{
+                with (item.style){
+                    height=width=ran(40,60)+"px";
+                    left=ran(0,widthDoc)+"px";
+                    top=ran(1,30)+"px";
+                }
+            }catch(e){
+                item.style.height=width=ran(40,60)+"px";
+                item.style.left=ran(0,widthDoc)+"px";
+                item.style.top=ran(1,30)+"px";
             }
+
         });
     }
 
