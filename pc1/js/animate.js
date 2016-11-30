@@ -12,7 +12,7 @@
      */
     function animate(ele,target,duration,effect,callback){ // ['Quad','easeOut'] 1 2 3 4 5
         //zhufengEffect.Quad.easeOut
-        //zhufengEffect[effect[0]][effect[1]]
+        //zhufengEffect[effect[0]][effect[1node]]
         //zhufengEffect['Quad']['easeOut']
 
         var zhufengEffect = {

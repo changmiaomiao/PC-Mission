@@ -12,7 +12,6 @@ var imgLoad = (function () {
      *
      * */
     var xhr = new XMLHttpRequest();
-
     function getData(ele, data, index) {
         data = data + "?_" + Math.random;
         xhr.open("get", data, false);
@@ -201,7 +200,7 @@ var masterVar = (function () {
             var src7 = this["src"];
             var imgSRC = jsP.introduce[this.i].getElementsByTagName("img")[0];
             var that = imgSRC.src == src7 ? null : 1;
-            //if(this.addSrc){var that=0}else{that=1}
+            //if(this.addSrc){var that=0}else{that=1node}
             jsP.introduce[this.i].style.display = "block";
             jsP.introduce[this.i].style.left = 330 + "px";
             var clientY = e.clientY;
@@ -386,13 +385,37 @@ imgLoad.allImgLoad(centerImgs);
 function getDate(){
     var musicianDate=document.getElementById("musician-date");
     var curDate=new Date;
+    var recommendDate=document.getElementById("recommendDate");
     var str="";
     var regMonth=["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
     var regDay=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+    var dayTime=["拂晓","黎明","清晨","上午","中午","下午","傍晚","深夜"];
         str+="<li>"+regMonth[curDate.getMonth()]+"</li>";
         str+="<li>"+curDate.getDate()+"</li>";
         str+="<li>"+regDay[curDate.getDay()]+"</li>";
     musicianDate.innerHTML=str;
+    var house=parseInt(curDate.getHours()),
+        number=null;
+    if(0<house<=3){
+        number=0;
+    }else if(3<house<=6){
+        number=1;
+    }else if(6<house<=9){
+        number=2;
+    }else if(9<house<=12){
+        number=3
+    }else if(12<house<=15){
+        number=4;
+    }else if(15<house<=18){
+        number=5;
+    }else if(18<house<=21){
+        number=6;
+    }else if(21<house<=0){
+        number=7;
+    };
+    console.log(number,house);
+    //str="<span>"+regDay[curDate.getDay()]+"</span><span>"+dayTime[number]+"</span>";
+    recommendDate.innerHTML=str;
 }
 getDate();
 /*主内容右边的点击切换*/
@@ -411,7 +434,7 @@ function discuss() {
                 discussChooseLis[i].className="";
                 if(i==1){
                     this.style.widths = 74 + "px";
-                    this.style.borderBottom="1px solid #111";
+                    //this.style.borderBottom="1px solid #ededed";
                     //this.style.borderBottom="transparent";
                 }
             }
@@ -421,4 +444,3 @@ function discuss() {
     }
 }
 discuss();
-/**/

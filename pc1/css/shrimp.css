@@ -880,13 +880,13 @@ div.share .shareHidden a:hover .innerShare{
     border-right: 1px solid #ebebeb;
     box-sizing: border-box;
 }
-.musicianMiddle .middle-bottom .middle-heart a:hover{
+.impRight .musician .musicianMiddle .middle-bottom .middle-heart a:hover{
     background-position: 0 -197px;
 }
-.musicianMiddle .middle-bottom .middle-share a{
+.impRight .musician .musicianMiddle .middle-bottom .middle-share a{
     background-position: 0 -40px;
 }
-.musicianMiddle .middle-bottom .middle-share a:hover{
+.impRight .musician .musicianMiddle .middle-bottom .middle-share a:hover{
     background-position: 0 -66px;
 }
 .musicianMiddle .middle-singer{
@@ -924,6 +924,9 @@ div.share .shareHidden a:hover .innerShare{
     color:#333;
     text-align: center;
     border-bottom:1px solid #ebebeb ;
+}
+.impRight .recommend p span{
+    margin-right: 15px;
 }
 .impRight .recommend .recommend-img{
     float: left;
@@ -971,7 +974,7 @@ div.share .shareHidden a:hover .innerShare{
 .impRight .discuss .discussChoose li.disChoose{
     width: 150px;
     background-color: white;
-    border-bottom: none;
+    border-bottom: 1px solid transparent;
 }
 .impRight .discuss .discussChoose li.disChoose0{
      border-right:1px solid #ededed ;
@@ -1634,9 +1637,3 @@ div.share .shareHidden a:hover .innerShare{
 .callBack a.callTop span{
     background-position: 6px -45px;
 }
-
-
-
-
-
-
