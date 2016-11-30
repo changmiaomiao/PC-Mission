@@ -396,25 +396,24 @@ function getDate(){
     musicianDate.innerHTML=str;
     var house=parseInt(curDate.getHours()),
         number=null;
-    if(0<house<=3){
+    if(house<=3){
         number=0;
-    }else if(3<house<=6){
+    }else if(house<=6){
         number=1;
-    }else if(6<house<=9){
+    }else if(house<=9){
         number=2;
-    }else if(9<house<=12){
+    }else if(house<=12){
         number=3
-    }else if(12<house<=15){
+    }else if(house<=15){
         number=4;
-    }else if(15<house<=18){
+    }else if(house<=18){
         number=5;
-    }else if(18<house<=21){
+    }else if(house<=21){
         number=6;
-    }else if(21<house<=0){
+    }else if(house<=0){
         number=7;
     };
-    console.log(number,house);
-    //str="<span>"+regDay[curDate.getDay()]+"</span><span>"+dayTime[number]+"</span>";
+    str="<span>"+regDay[curDate.getDay()]+"</span><span>"+dayTime[number]+"</span>";
     recommendDate.innerHTML=str;
 }
 getDate();
