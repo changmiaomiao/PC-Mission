@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        var desWfontSize = 100;
+        document.documentElement.style.fontSize = desW/winW*desWfontSize+"px";
+    </script>
+
+</head>
+<body>
+<div id="main">
+    <div class="music musicMove">
+        <audio src="audio/Flo%20Rida%20-%20Whistle%20-%20伴奏版.mp3" id="piano" loop preload="none" class=""></audio>
+    </div>
+    <div class="arrow">
+    </div>
+
+
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide1" >
+  <ul class="one">
+      <li class="person">
+          <img src="img/person.png" alt=""></li>
+      <li class="person1"><img src="img/person1.png" alt=""></li>
+      <li class="des">
+          <p>web前端，求职简历</p>
+          <img src="img/yumao.png" alt="">
+      </li>
+      <li class="book">
+          <img src="img/book.png" alt="">
+      </li>
+      <li class="books">
+          <img src="img/books.png" alt="">
+      </li>
+
+  </ul>
+
+
+
+          </div>
+        <div class="swiper-slide slide2" >
+
+
+        </div>
+
+            <div class="swiper-slide slide3" >
+
+            </div>
+
+
+
+
+    <div class="swiper-slide slide4" >
+
+
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper(".swiper-container",{
+        direction:"vertical",
+        effect:"flip",
+        loop : true,
+        onSlideChangeEnd :function(swiper){
+            var slides = swiper.slides;
+            var curIndex = swiper.activeIndex;
+            var trueSlideNum = slides.length-2;
+            var lastSlideNum  = trueSlideNum+1;
+            [].forEach.call(slides,function(item,index){
+                item.id = "";
+                if(index == curIndex){
+                    switch (index){
+                        case 0 :
+                            item.id = "page"+ trueSlideNum;
+                            break;
+                        case lastSlideNum :
+                            item.id = "page1";
+                            break;
+                        default  :
+                            item.id = "page"+curIndex;
+                    }
+                }
+            })
+
+        },
+        onInit : function(swiper){
+//
+        }
+    });
+
+
+
+    var piano= document.querySelector("#piano");
+    var music = document.querySelector(".music");
+    window.setTimeout(function(){
+        piano.play();
+        piano.addEventListener("canplay",function(){
+            music.className = "music musicMove";
+            music.style.opacity = 1;
+        })
+
+    },1000);
+    music.addEventListener("click",function(){
+        if(piano.paused){
+            piano.play();
+            music.className = "music musicMove";
+        }else{
+            piano.pause();
+            music.className = "music";
+        }
+    })
+
+</script>
+</body>
+</html>
+
