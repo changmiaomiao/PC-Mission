@@ -65,6 +65,7 @@ html,body{
 }  .slide1 .bottom{
     position: absolute;
     bottom: 0;
+    opacity: 0;
 }  .slide1 .bottom .peoLeft,.slide1 .bottom .peoRight{
     position: absolute;
     bottom: 0;
@@ -469,10 +470,14 @@ html,body{
     background-size: 100% 100%;
 }
 .slide6 p{
+    position: absolute;
+    top:2rem;
+    width: 100%;
+    text-align: center;
     font-size: 0.7rem;
     color: white;
     font-weight: bold;
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
     text-shadow:0.3rem 0.2rem rgba(0,0,0,0.5) ;
 }
 .slide6 img{

@@ -34,7 +34,8 @@
 <body>
 <div id="main">
     <div class="music">
-        <audio src="audio/happy.mp3" loop preload="none" id="play">
+        <!--<audio src="audio/happy.mp3" loop preload="none" id="play">-->
+        <audio id="play" loop preload="none">
 
         </audio>
     </div>
@@ -188,25 +189,30 @@
     var play = document.querySelector("#play");
     var music = document.querySelector(".music");
     window.setTimeout(function(){
+        play.src = "audio/happy.mp3";
         play.play();
         play.addEventListener("canplay",function(){
             music.className="music musicMove";
             music.style.opacity=1;
         })
     },1000);
-    document.addEventListener("WeixinJSBridgeReady", function () {
-        music.load();
-    }, false);
-    // 监听手机摇动
-    window.addEventListener('shake', playM, false);
     music.addEventListener("click",playM);
     function playM(){
         if (play.paused){
             play.play();
-            music.className = "music musicMove";
+            if(music.classList.add){
+                music.classList.add("musicMove");
+            }else{
+                music.className = "music musicMove";
+            }
+
         }else{
             play.pause();
-            music.className = "music";
+            if(music.classList.remove){
+                music.classList.remove("musicMove");
+            }else{
+                music.className = "music musicMove";
+            }
         }
     }
 </script>
