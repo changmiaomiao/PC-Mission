@@ -3,8 +3,7 @@ html,body{
     height: 100%;
     overflow: hidden;
     font-family: "Arial", "宋体", "微软雅黑";
-}
-#main,.swiper-container{
+}  #main,.swiper-container{
     width: 100%;
     height: 100%;
 }
@@ -16,15 +15,12 @@ html,body{
     top: 0.4rem;
     right: 0.4rem;
     z-index: 20;
-    opacity: 0;
-    background: url(../audio/music.svg) no-repeat;
-}
-.music{
     background: url(../images/music.png) no-repeat;
+    opacity: 0;
+}  .music{  background: url(../audio/music.svg) no-repeat;
     background-size: 100% 100%;
-}
-.musicMove{
-    -webkit-animation: revolve 1.6s infinite linear both;
+}  .musicMove{
+    -webkit-animation: myRote 1.6s infinite linear both;
     -moz-animation: myRote 1.6s infinite linear both;
     -ms-animation: myRote 1.6s infinite linear both;
     -o-animation: myRote 1.6s infinite linear both;
@@ -33,37 +29,31 @@ html,body{
 /*首页*/
 .slide1{
     background-color: #eee;
-}
-.slide1 .fonts li{
+}  .slide1 .fonts li{
     position: absolute;
     width:1rem;
     height:1rem;
-}
-.slide1 .fonts .cong{
+}  .slide1 .fonts .cong{
     top: 1.5rem;
     left:42%;
     background: url("../images/cong.png")no-repeat ;
     background-size: 100% 100%;
-}
-.slide1 .fonts .ling{
+}  .slide1 .fonts .ling{
     top: 2.5rem;
     left:35%;
     background: url("../images/ling.png")no-repeat ;
     background-size: 100% 100%;
-}
-.slide1 .fonts .kai{
+}  .slide1 .fonts .kai{
     top: 3.5rem;
     left:42%;
     background: url("../images/kai.png") no-repeat ;
     background-size: 100% 100%;
-}
-.slide1 .fonts .shi{
+}  .slide1 .fonts .shi{
     top: 4.5rem;
     left:42%;
     background: url("../images/shi.png") no-repeat ;
     background-size: 100% 100%;
-}
-.slide1 .fonts .resume{
+}  .slide1 .fonts .resume{
     position: absolute;
     left: 20%;
     top:3.8rem;
@@ -72,57 +62,48 @@ html,body{
     color: #eee;
     line-height: 0.5rem;
     font-size: 0.4rem;
-}
-.slide1 .bottom{
+}  .slide1 .bottom{
     position: absolute;
     bottom: 0;
-}
-.slide1 .bottom .peoLeft,.slide1 .bottom .peoRight{
+}  .slide1 .bottom .peoLeft,.slide1 .bottom .peoRight{
     position: absolute;
     bottom: 0;
     width: 1.5rem;
     height: 4rem;
-}
-.slide1 .bottom .peoLeft{
+}  .slide1 .bottom .peoLeft{
     left: 3.6rem;
-}
-.slide1 .bottom .peoRight{
+}  .slide1 .bottom .peoRight{
     left: 2.6rem;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-}
-#page1 .fonts .cong,#page1 .bottom{
+}  #page1 .fonts .cong,#page1 .bottom{
     -webkit-animation: mini 2s linear 0.5s both;
     -moz-animation: mini 2s linear 0.2s both;
     -ms-animation: mini 2s linear 0.2s both;
     -o-animation: mini 2s linear 0.2s both;
     animation: mini 2s linear 0.2s both;
-}
-#page1 .fonts li.ling{
+}  #page1 .fonts li.ling{
     -webkit-animation: mini 2s linear 0.5s  both;
     -moz-animation: mini 2s linear 0.5s  both;
     -ms-animation: mini 2s linear 0.5s  both;
     -o-animation: mini 2s linear 0.5s  both;
     animation: mini 2s linear 0.5s  both;
-}
-#page1 .fonts li.kai{
+}  #page1 .fonts li.kai{
     -webkit-animation: mini 2s linear 1s  both;
     -moz-animation: mini 2s linear 1s  both;
     -ms-animation: mini 2s linear 1s  both;
     -o-animation: mini 2s linear 1s  both;
     animation: mini 2s linear 1s  both;
-}
-#page1 .fonts li.shi{
+}  #page1 .fonts li.shi{
     -webkit-animation: mini 1.5s linear 1.5s  both;
     -moz-animation: mini 1.5s linear 1.5s  both;
     -ms-animation: mini 1.5s linear 1.5s  both;
     -o-animation: mini 1.5s linear 1.5s  both;
     animation: mini 1.5s linear 1.5s  both;
-}
-#page1 .fonts .resume{
+}  #page1 .fonts .resume{
     left: 35%;
     top:3.8rem;
     color:#6b6b6b ;
@@ -132,57 +113,46 @@ html,body{
     -o-transition: all 2s 1s;
     transition: all 2s 1s;
 }
-/*首页结束*/
-.skillTop {
+/*首页结束*/  .skillTop {
     position: absolute;
     top:1rem;
     width: 100%;
     font-size: 0.4rem;
     color: #333;
 
-}
-.skillTop span{
+}  .skillTop span{
     position: absolute;
     opacity: 0;
-}
-.skillTop span.bigSkill{
+}  .skillTop span.bigSkill{
     left: 20%;
     font-size: 0.6rem;
     font-weight: 900;
-}
-.skillTop .line{
+}  .skillTop .line{
     position: absolute;
     left: 44%;
     width: 2rem;
     height: 1rem;
     opacity: 0;
-}
-.skillTop span.skillBottom{
+}  .skillTop span.skillBottom{
     top:0.35rem;
     left: 54%;
-}
-.skillTop span b{
+}  .skillTop span b{
     color: red;
-}
-.slide2 .skillContent{
+}  .slide2 .skillContent{
     position:absolute;
     left:20%;
     top:25%;
     font-size: 0.48rem;
     flood-color: #5b5b5b;
-}
-.slide2 .skillContent li{
+}  .slide2 .skillContent li{
     line-height: 1rem;
     height: 1rem;
     opacity: 0;
-}
-.slide2 .skillContent .colRed{
+}  .slide2 .skillContent .colRed{
     color: red;
-}
-.slide2 .skillContent li:nth-child(odd){
+}  .slide2 .skillContent li:nth-child(odd){
     color: red;
-}
-.timing{
+}  .timing{
     position: absolute;
     left:0;
     bottom:0;
@@ -377,66 +347,52 @@ html,body{
     top:2rem;
     width: 100%;
     height: 3.5rem;
-}
-.slide5 .contact img{
+}  .slide5 .contact img{
     display: block;
     margin: 0 auto;
     width: 0;
     height: 0;
-}
-.slide5 .contact p{
+}  .slide5 .contact p{
     margin-bottom: .2rem;
-}
-.slide5 .contact .link{
+}  .slide5 .contact .link{
     font-size: 0;
     opacity: 0;
     text-align:center ;
-}
-.slide5 .contact .name,.slide5 .contact .work{
+}  .slide5 .contact .name,.slide5 .contact .work{
     opacity: 0;
-}
-.slide5 .contact .name,.slide5 .contact .work,.slide5 .myInf li{
+}  .slide5 .contact .name,.slide5 .contact .work,.slide5 .myInf li{
     position: absolute;
     left:22% ;
-}
-.slide5 .contact .name{
+}  .slide5 .contact .name{
     top:3.2rem;
     font-size: 0.5rem;
-}
-.slide5 .contact .work{
+}  .slide5 .contact .work{
     top:4rem;
     color: #555;
     font-size: 0.4rem;
-}
-.slide5 .myInf{
+}  .slide5 .myInf{
     position: absolute;
     width: 100%;
     top:6.8rem;
     font-size: 0.36rem;
     color: #555;
-}
-.slide5 .myInf li img,.slide5 .myInf li span{
+}  .slide5 .myInf li img,.slide5 .myInf li span{
     position: absolute;
     width: 0.4rem;
     height: 0.4rem;
     vertical-align: middle;
     margin-right: 0.2rem;
     opacity: 0;
-}
-.slide5 .myInf li span{
+}  .slide5 .myInf li span{
      left: 0.6rem; 
-}
-.slide5 .myInf .tel{
+}  .slide5 .myInf .tel{
     top:0;
-}
-.slide5 .myInf .qq{
+}  .slide5 .myInf .qq{
     top:0.8rem;
     color:#555 ;
-}
-.slide5 .myInf .qq a{
+}  .slide5 .myInf .qq a{
     color:#555 ;
-}
-.slide5 .myInf .qq b{
+}  .slide5 .myInf .qq b{
     position: absolute;
     left: 2.5rem;
     width: 2rem;
@@ -444,25 +400,21 @@ html,body{
     line-height: 0.36rem;
     font-size:0.3rem;
     color: white;
-}
-.slide5 .myInf .emile{
+}  .slide5 .myInf .emile{
     top:1.6rem;
-}
-#page5 .contact .name{
+}  #page5 .contact .name{
     -webkit-animation: fadeInDown 1.5s linear  both 2s ;
     -moz-animation: fadeInDown 1.5s linear  both 2s;
     -ms-animation: fadeInDown 1.5s linear  both 2s;
     -o-animation: fadeInDown 1.5s linear  both 2s ;
     animation: fadeInDown 1.5s linear  both 2s;
-}
-#page5 .contact .work{
+}  #page5 .contact .work{
     -webkit-animation: fadeInUp 1.5s linear  both 2s ;
     -moz-animation: fadeInUp 1.5s linear  both 2s;
     -ms-animation: fadeInUp 1.5s linear  both 2s;
     -o-animation: fadeInUp 1.5s linear  both 2s ;
     animation: fadeInUp 1.5s linear  both 2s;
-}
-#page5 .myInf .qq b{
+}  #page5 .myInf .qq b{
     color: red;
     -webkit-transition:all 2s  ;
     -moz-transition: all 2s  ;
@@ -479,29 +431,20 @@ html,body{
     -o-animation: flash 1.5s linear  both 3  5.5s;
     animation: flash 1.5s linear  both 3 5.5s;
 
-}
-#page5 .myInf img{
+}  #page5 .myInf img{
     -webkit-animation: fadeInLeft 1.5s linear  both  ;
     -moz-animation: fadeInLeft 1.5s linear  both ;
     -ms-animation: fadeInLeft 1.5s linear  both ;
     -o-animation: fadeInLeft 1.5s linear  both  ;
     animation: fadeInLeft 1.5s linear  both ;
 
-}
-#page5 .myInf span{
+}  #page5 .myInf span{
     -webkit-animation: fadeInRight 1.5s linear  both  ;
     -moz-animation: fadeInRight 1.5s linear  both ;
     -ms-animation: fadeInRight 1.5s linear  both ;
     -o-animation: fadeInRight 1.5s linear  both  ;
     animation: fadeInRight 1.5s linear  both ;
-}
-#page5 .myInf .tel img{animation-delay: 2.5s;  }
-#page5 .myInf .tel span{animation-delay: 3s;  }
-#page5 .myInf .qq img{animation-delay: 3.5s;  }
-#page5 .myInf .qq span{animation-delay: 4s;  }
-#page5 .myInf .emile img{animation-delay: 4.5s;  }
-#page5 .myInf .emile span{animation-delay: 5s;  }
-#page5 .contact img{
+}  #page5 .myInf .tel img{animation-delay: 2.5s;  }  #page5 .myInf .tel span{animation-delay: 3s;  }  #page5 .myInf .qq img{animation-delay: 3.5s;  }  #page5 .myInf .qq span{animation-delay: 4s;  }  #page5 .myInf .emile img{animation-delay: 4.5s;  }  #page5 .myInf .emile span{animation-delay: 5s;  }  #page5 .contact img{
     width: 2.8rem;
     height: 2.8rem;
     -webkit-transition:all 2s;
@@ -509,8 +452,7 @@ html,body{
     -ms-transition: all 2s;
     -o-transition: all 2s;
     transition: all 2s;
-}
-#page5 .contact .link{
+}  #page5 .contact .link{
     opacity: 1;
     color: red;
     font-size: .5rem;
