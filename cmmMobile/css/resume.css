@@ -4,7 +4,6 @@ html,body{
     overflow: hidden;
     font-family: "Arial", "宋体", "微软雅黑";
 }
-
 #main,.swiper-container{
     width: 100%;
     height: 100%;
@@ -28,6 +27,54 @@ html,body{
     -o-animation: myRote 1.6s infinite linear both;
     animation: myRote 1.6s infinite linear both;
 }
+@-webkit-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 @keyframes myRote {
     0%{
         -webkit-transform: rotate(0deg);
@@ -44,13 +91,9 @@ html,body{
         transform: rotate(360deg);
     }
 }
-
 /*首页*/
 .slide1{
     background-color: #eee;
-}
-.slide1 .fonts{
-
 }
 .slide1 .fonts li{
     position: absolute;
@@ -96,15 +139,6 @@ html,body{
     position: absolute;
     bottom: 0;
 }
-/*.slide1 .bottom .borWhite{
-    position: absolute;
-    left:50%;
-    top:0;
-    width: 3.5rem;
-    height: 4.5rem;
-    border:.3rem solid white;
-    box-sizing: border-box;
-}*/
 .slide1 .bottom .peoLeft,.slide1 .bottom .peoRight{
     position: absolute;
     bottom: 0;
@@ -158,12 +192,9 @@ html,body{
     animation: trans 1s linear 2s both;
 }
 /*首页结束*/
-.slide2{
-
-}
 .skillTop {
     position: absolute;
-    top:1.3rem;
+    top:1rem;
     width: 100%;
     font-size: 0.4rem;
     color: #333;
@@ -210,7 +241,6 @@ html,body{
 .slide2 .skillContent li:nth-child(odd){
     color: red;
 }
-
 .timing{
     position: absolute;
     left:0;
@@ -237,13 +267,11 @@ html,body{
     -o-animation:fadeInRight 1s linear both;
     animation:fadeInRight 1s linear both;
 }
-
 #page2 .skillContent li:nth-child(1){
     -webkit-animation:fadeInRight 1s linear both 1s;
     -o-animation:fadeInRight 1s linear both 1s;
     animation:fadeInRight 1s linear both 1s;
 }
-
 #page2 .skillContent li:nth-child(2){
     -webkit-animation:fadeInRight 1s linear both 1s;
     -o-animation:fadeInRight 1s linear both 1.5s;
@@ -343,14 +371,14 @@ html,body{
 }
 .slide4 .works{
     margin: 0 auto;
-    width: 6rem;
-    height: 9rem;
+    width: 4rem;
+    height: 6rem;
 }
 .slide4 .works li{
     position: absolute;
     z-index: -1;
-    width: 3rem;
-    height: 33%;
+    width: 2rem;
+    height: 2rem;
     background: url("../images/xiami.png") no-repeat ;
     background-size: 100% 100%;
     opacity: 0;
@@ -403,12 +431,9 @@ html,body{
     animation: myMini 1.5s linear  both 3s;
 }
 /*作品展示结束*/
-.slide5{
-
-}
 .slide5 .contact{
     position: absolute;
-    top:2.4rem;
+    top:2rem;
     width: 100%;
     height: 3.5rem;
 }
@@ -445,7 +470,7 @@ html,body{
 .slide5 .myInf{
     position: absolute;
     width: 100%;
-    top:7.2rem;
+    top:6.5rem;
     font-size: 0.36rem;
     color: #555;
 }
@@ -460,7 +485,6 @@ html,body{
 .slide5 .myInf li span{
      left: 0.6rem; 
 }
-
 .slide5 .myInf .tel{
     top:0;
 }
@@ -499,7 +523,14 @@ html,body{
 }
 #page5 .myInf .qq b{
     color: red;
-    transition: all 1s;
+    -webkit-transition:all 2s  ;
+    -moz-transition: all 2s  ;
+    -ms-transition: all 2s  ;
+    -o-transition: all 2s  ;
+    -webkit-transition-delay:5.5s  ;
+    -moz-transition-delay:5.5s;
+    -ms-transition-delay: 5.5s ;
+    -o-transition-delay: 5.5s;
     transition-delay: 5.5s;
     -webkit-animation: flash 1.5s linear  both  3 5.5s;
     -moz-animation: flash 1.5s linear  both 3 5.5s;
@@ -529,17 +560,24 @@ html,body{
 #page5 .myInf .qq span{animation-delay: 4s;  }
 #page5 .myInf .emile img{animation-delay: 4.5s;  }
 #page5 .myInf .emile span{animation-delay: 5s;  }
-
 #page5 .contact img{
     width: 2.8rem;
     height: 2.8rem;
-    transition: all 2s;
+    -webkit-transition:all 2s  ;
+    -moz-transition: all 2s  ;
+    -ms-transition: all 2s  ;
+    -o-transition: all 2s  ;
+    transition: all 2s  ;
 }
 #page5 .contact .link{
     opacity: 1;
     color: red;
     font-size: .5rem;
-    transition: all 2s;
+    -webkit-transition:all 2s  ;
+    -moz-transition: all 2s  ;
+    -ms-transition: all 2s  ;
+    -o-transition: all 2s  ;
+    transition: all 2s  ;
 }
 /*联系页结束*/
 .slide6{
@@ -565,6 +603,34 @@ html,body{
     border-radius: .5rem;
     box-shadow: 0.6rem 1rem 0.3rem rgba(0,0,0,0.5);
 }
+
+@-webkit-keyframes myOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@-o-keyframes myOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@-moz-keyframes myOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
 @keyframes myOpacity {
     0% {
         opacity: 0;
@@ -572,26 +638,182 @@ html,body{
     100%{
         opacity: 1;
     }
+
+}
+@-webkit-keyframes mini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-o-keyframes mini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-moz-keyframes mini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
 }
 @keyframes mini {
     0% {
        opacity: 0;
-     transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
     }
     100%{
         opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes myMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-o-keyframes myMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-moz-keyframes myMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
         transform: scale(1);
     }
 }
 @keyframes myMini {
     0% {
         opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
         transform: scale(0);
     }
     100%{
         opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
         transform: scale(1);
     }
+}
+@-webkit-keyframes trans {
+    0%{
+        color: #eee;
+        left: 30%;
+    }
+    100%{
+        left: 34%;
+        color: #6b6b6b;
+    }
+}
+@-o-keyframes trans {
+    0%{
+        color: #eee;
+        left: 30%;
+    }
+    100%{
+        left: 34%;
+        color: #6b6b6b;
+    }
+}
+@-moz-keyframes trans {
+    0%{
+        color: #eee;
+        left: 30%;
+    }
+    100%{
+        left: 34%;
+        color: #6b6b6b;
+    }
+
 }
 @keyframes trans {
     0%{
