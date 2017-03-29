@@ -194,6 +194,11 @@
             music.style.opacity=1;
         })
     },1000);
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        music.load();
+    }, false);
+    // 监听手机摇动
+    window.addEventListener('shake', playM, false);
     music.addEventListener("click",playM);
     function playM(){
         if (play.paused){

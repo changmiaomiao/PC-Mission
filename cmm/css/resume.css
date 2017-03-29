@@ -1,0 +1,732 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Arial", "宋体", "微软雅黑";
+}  #main,.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+/*音乐*/
+.music{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    z-index: 20;
+    background: url(../images/music.png) no-repeat;
+    opacity: 0;
+}  .music{  background: url(../audio/music.svg) no-repeat;
+    background-size: 100% 100%;
+}  .musicMove{
+    -webkit-animation: myRote 1.6s infinite linear both;
+    -moz-animation: myRote 1.6s infinite linear both;
+    -ms-animation: myRote 1.6s infinite linear both;
+    -o-animation: myRote 1.6s infinite linear both;
+    animation: myRote 1.6s infinite linear both;
+}
+/*首页*/
+.slide1{
+    background-color: #eee;
+}  .slide1 .fonts li{
+    position: absolute;
+    width:1rem;
+    height:1rem;
+}  .slide1 .fonts .cong{
+    top: 1.5rem;
+    left:42%;
+    background: url("../images/cong.png")no-repeat ;
+    background-size: 100% 100%;
+}  .slide1 .fonts .ling{
+    top: 2.5rem;
+    left:35%;
+    background: url("../images/ling.png")no-repeat ;
+    background-size: 100% 100%;
+}  .slide1 .fonts .kai{
+    top: 3.5rem;
+    left:42%;
+    background: url("../images/kai.png") no-repeat ;
+    background-size: 100% 100%;
+}  .slide1 .fonts .shi{
+    top: 4.5rem;
+    left:42%;
+    background: url("../images/shi.png") no-repeat ;
+    background-size: 100% 100%;
+}  .slide1 .fonts .resume{
+    position: absolute;
+    left: 20%;
+    top:3.8rem;
+    width: 0.4rem;
+    height: auto;
+    color: #eee;
+    line-height: 0.5rem;
+    font-size: 0.4rem;
+}  .slide1 .bottom{
+    position: absolute;
+    bottom: 0;
+}  .slide1 .bottom .peoLeft,.slide1 .bottom .peoRight{
+    position: absolute;
+    bottom: 0;
+    width: 1.5rem;
+    height: 4rem;
+}  .slide1 .bottom .peoLeft{
+    left: 3.6rem;
+}  .slide1 .bottom .peoRight{
+    left: 2.6rem;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}  #page1 .fonts .cong,#page1 .bottom{
+    -webkit-animation: mini 2s linear 0.5s both;
+    -moz-animation: mini 2s linear 0.2s both;
+    -ms-animation: mini 2s linear 0.2s both;
+    -o-animation: mini 2s linear 0.2s both;
+    animation: mini 2s linear 0.2s both;
+}  #page1 .fonts li.ling{
+    -webkit-animation: mini 2s linear 0.5s  both;
+    -moz-animation: mini 2s linear 0.5s  both;
+    -ms-animation: mini 2s linear 0.5s  both;
+    -o-animation: mini 2s linear 0.5s  both;
+    animation: mini 2s linear 0.5s  both;
+}  #page1 .fonts li.kai{
+    -webkit-animation: mini 2s linear 1s  both;
+    -moz-animation: mini 2s linear 1s  both;
+    -ms-animation: mini 2s linear 1s  both;
+    -o-animation: mini 2s linear 1s  both;
+    animation: mini 2s linear 1s  both;
+}  #page1 .fonts li.shi{
+    -webkit-animation: mini 1.5s linear 1.5s  both;
+    -moz-animation: mini 1.5s linear 1.5s  both;
+    -ms-animation: mini 1.5s linear 1.5s  both;
+    -o-animation: mini 1.5s linear 1.5s  both;
+    animation: mini 1.5s linear 1.5s  both;
+}  #page1 .fonts .resume{
+    left: 35%;
+    top:3.8rem;
+    color:#6b6b6b ;
+    -webkit-transition:all 2s 1s;
+    -moz-transition: all 2s 1s;
+    -ms-transition: all 2s 1s;
+    -o-transition: all 2s 1s;
+    transition: all 2s 1s;
+}
+/*首页结束*/  .skillTop {
+    position: absolute;
+    top:1rem;
+    width: 100%;
+    font-size: 0.4rem;
+    color: #333;
+
+}  .skillTop span{
+    position: absolute;
+    opacity: 0;
+}  .skillTop span.bigSkill{
+    left: 20%;
+    font-size: 0.6rem;
+    font-weight: 900;
+}  .skillTop .line{
+    position: absolute;
+    left: 44%;
+    width: 2rem;
+    height: 1rem;
+    opacity: 0;
+}  .skillTop span.skillBottom{
+    top:0.35rem;
+    left: 54%;
+}  .skillTop span b{
+    color: red;
+}  .slide2 .skillContent{
+    position:absolute;
+    left:20%;
+    top:25%;
+    font-size: 0.48rem;
+    flood-color: #5b5b5b;
+}  .slide2 .skillContent li{
+    line-height: 1rem;
+    height: 1rem;
+    opacity: 0;
+}  .slide2 .skillContent .colRed{
+    color: red;
+}  .slide2 .skillContent li:nth-child(odd){
+    color: red;
+}  .timing{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 4rem;
+    opacity: 0;
+    background: url("../images/tim.png") no-repeat ;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+#page2 .skillTop span.bigSkill,#page3 .skillTop span.bigSkill,#page4 .skillTop span.bigSkill,#page5 .skillTop span.bigSkill{
+    -webkit-animation:fadeInLeft 1s linear both 0.5s;
+    -o-animation:fadeInLeft 1s linear both 0.5s;
+    animation:fadeInLeft 1s linear both 0.5s;
+}
+#page2 .skillTop .line,#page3 .skillTop .line,#page4 .skillTop .line,#page5 .skillTop .line{
+    -webkit-animation:myOpacity 1s linear both;
+    -o-animation:myOpacity 1s linear both;
+    animation:myOpacity 1s linear both;
+}
+#page2 .skillTop span.skillBottom,#page3 .skillTop span.skillBottom,#page4 .skillTop span.skillBottom,#page5 .skillTop span.skillBottom{
+    -webkit-animation:fadeInRight 1s linear both;
+    -o-animation:fadeInRight 1s linear both;
+    animation:fadeInRight 1s linear both;
+}
+#page2 .skillContent li:nth-child(1){
+    -webkit-animation:fadeInRight 1s linear both 1s;
+    -o-animation:fadeInRight 1s linear both 1s;
+    animation:fadeInRight 1s linear both 1s;
+}
+#page2 .skillContent li:nth-child(2){
+    -webkit-animation:fadeInRight 1s linear both 1s;
+    -o-animation:fadeInRight 1s linear both 1.5s;
+    animation:fadeInRight 1s linear both 1.5s;
+}
+#page2 .skillContent li:nth-child(3){
+    -webkit-animation:fadeInRight 1s linear both 2s;
+    -o-animation:fadeInRight 1s linear both 2s;
+    animation:fadeInRight 1s linear both 2s;
+}
+#page2 .skillContent li:nth-child(4){
+    -webkit-animation:fadeInRight 1s linear both 2.5s;
+    -o-animation:fadeInRight 2.5s linear both 2.5s;
+    animation:fadeInRight 1s linear both 2.5s;
+}
+#page2 .skillContent li:nth-child(5){
+    -webkit-animation:fadeInRight 1s linear both 3s;
+    -o-animation:fadeInRight 2.5s linear both 3s;
+    animation:fadeInRight 1s linear both 3s;
+}
+#page2 .timing,#page3 .timing,#page4 .timing,#page5 .timing{
+    -webkit-animation: mini 2s linear  both 1s ;
+    -moz-animation: mini 2s linear  both 1s;
+    -ms-animation: mini 2s linear   both 1s;
+    -o-animation: mini 2s linear  both 1s ;
+    animation: mini 2s linear   both 1s;
+}
+/*技能也结束*/
+.slide3 .me{
+    position: absolute;
+    top:2rem;
+    left:25%;
+    width: 50%;
+    height: 3rem;
+    opacity: 0;
+}
+.slide3 .myInfo{
+    position: absolute;
+    top:5.5rem;
+    left: 20%;
+    font-size: 0.42rem;
+    color: #333;
+}
+.slide3 .myInfo li{
+    margin: 0 auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    position: relative;
+}
+.slide3 .myInfo li span{
+    margin-left: 0.3rem;
+}
+.slide3 .myInfo li:after{
+    position: absolute;
+    top:0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0.6rem;
+    background-color: white;
+}
+.slide3 .timing,.slide4 .timing,.slide5 .timing{
+    height: 2.6rem;
+}
+#page3 .myInfo li:nth-child(odd):after{
+     -webkit-animation: fadeOutLeft 2s linear  both  ;
+     -moz-animation: fadeOutLeft 2s linear  both;
+     -ms-animation: fadeOutLeft 2s linear  both ;
+     -o-animation: fadeOutLeft 2s linear  both  ;
+     animation: fadeOutLeft 2s linear  both ;
+ }
+#page3 .myInfo li:nth-child(even):after{
+    -webkit-animation: fadeOutRight 2s linear  both  ;
+    -moz-animation: fadeOutRight 2s linear  both;
+    -ms-animation: fadeOutRight 2s linear  both ;
+    -o-animation: fadeOutRight 2s linear  both  ;
+    animation: fadeOutRight 2s linear  both ;
+}
+#page3 .myInfo li:nth-child(1):after{animation-delay:0.5s;}
+#page3 .myInfo li:nth-child(2):after{animation-delay:1s }
+#page3 .myInfo li:nth-child(3):after{animation-delay:1.5s }
+#page3 .myInfo li:nth-child(4):after{animation-delay:2s }
+#page3 .myInfo li:nth-child(5):after{animation-delay:2.3s }
+#page3 .myInfo li:nth-child(6):after{animation-delay:2.6s }
+#page3 .me{
+    -webkit-animation: myMini 1.5s linear  both .5s ;
+    -moz-animation: myMini 1.5s linear  both .5s;
+    -ms-animation: myMini 1.5s linear  both .5s;
+    -o-animation: myMini 1.5s linear  both 0.5s ;
+    animation: myMini 1.5s linear  both .5s;
+}
+/*信息结束*/
+.slide4 .myPos{
+    position: absolute;
+    top:2.5rem;
+    width: 100%;
+}
+.slide4 .works{
+    margin: 0 auto;
+    width: 4rem;
+    height: 6rem;
+}
+.slide4 .works li{
+    position: absolute;
+    z-index: -1;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/xiami.png") no-repeat ;
+    background-size: 100% 100%;
+    opacity: 0;
+}
+.slide4 .works li:nth-child(even){left: 50%}
+.slide4 .works li:nth-child(3){top: 33%}
+.slide4 .works li:nth-child(4){top: 33%}
+.slide4 .works li:nth-child(5){top: 66.7%}
+.slide4 .works li:nth-child(6){top: 66.7%}
+#page4 .works li:nth-child(1){
+    -webkit-animation: myMini 1.5s linear  both .5s ;
+    -moz-animation: myMini 1.5s linear  both .5s;
+    -ms-animation: myMini 1.5s linear  both .5s;
+    -o-animation: myMini 1.5s linear  both .5s ;
+    animation: myMini 1.5s linear  both .5s;
+}
+#page4 .works li:nth-child(2){
+    -webkit-animation: myMini 1.5s linear  both 1s ;
+    -moz-animation: myMini 1.5s linear  both 1s;
+    -ms-animation: myMini 1.5s linear  both 1s;
+    -o-animation: myMini 1.5s linear  both 1s ;
+    animation: myMini 1.5s linear  both 1s;
+}
+#page4 .works li:nth-child(3){
+    -webkit-animation: myMini 1.5s linear  both 1.5s ;
+    -moz-animation: myMini 1.5s linear  both 1.5s;
+    -ms-animation: myMini 1.5s linear  both 1.5s;
+    -o-animation: myMini 1.5s linear  both 1.5s ;
+    animation: myMini 1.5s linear  both 1.5s;
+}
+#page4 .works li:nth-child(4){
+    -webkit-animation: myMini 1.5s linear  both 2s ;
+    -moz-animation: myMini 1.5s linear  both 2s;
+    -ms-animation: myMini 1.5s linear  both 2s;
+    -o-animation: myMini 1.5s linear  both 2s ;
+    animation: myMini 1.5s linear  both 2s;
+}
+#page4 .works li:nth-child(5){
+    -webkit-animation: myMini 1.5s linear  both 2.5s ;
+    -moz-animation: myMini 1.5s linear  both 2.5s;
+    -ms-animation: myMini 1.5s linear  both 2.5s;
+    -o-animation: myMini 1.5s linear  both 2.5s ;
+    animation: myMini 1.5s linear  both 2.5s;
+}
+#page4 .works li:nth-child(6){
+    -webkit-animation: myMini 1.5s linear  both 3s ;
+    -moz-animation: myMini 1.5s linear  both 3s;
+    -ms-animation: myMini 1.5s linear  both 3s;
+    -o-animation: myMini 1.5s linear  both 3s ;
+    animation: myMini 1.5s linear  both 3s;
+}
+/*作品展示结束*/
+.slide5 .contact{
+    position: absolute;
+    top:2rem;
+    width: 100%;
+    height: 3.5rem;
+}  .slide5 .contact img{
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+}  .slide5 .contact p{
+    margin-bottom: .2rem;
+}  .slide5 .contact .link{
+    font-size: 0;
+    opacity: 0;
+    text-align:center ;
+}  .slide5 .contact .name,.slide5 .contact .work{
+    opacity: 0;
+}  .slide5 .contact .name,.slide5 .contact .work,.slide5 .myInf li{
+    position: absolute;
+    left:22% ;
+}  .slide5 .contact .name{
+    top:3.2rem;
+    font-size: 0.5rem;
+}  .slide5 .contact .work{
+    top:4rem;
+    color: #555;
+    font-size: 0.4rem;
+}  .slide5 .myInf{
+    position: absolute;
+    width: 100%;
+    top:6.8rem;
+    font-size: 0.36rem;
+    color: #555;
+}  .slide5 .myInf li img,.slide5 .myInf li span{
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+    opacity: 0;
+}  .slide5 .myInf li span{
+     left: 0.6rem; 
+}  .slide5 .myInf .tel{
+    top:0;
+}  .slide5 .myInf .qq{
+    top:0.8rem;
+    color:#555 ;
+}  .slide5 .myInf .qq a{
+    color:#555 ;
+}  .slide5 .myInf .qq b{
+    position: absolute;
+    left: 2.5rem;
+    width: 2rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    font-size:0.3rem;
+    color: white;
+}  .slide5 .myInf .emile{
+    top:1.6rem;
+}  #page5 .contact .name{
+    -webkit-animation: fadeInDown 1.5s linear  both 2s ;
+    -moz-animation: fadeInDown 1.5s linear  both 2s;
+    -ms-animation: fadeInDown 1.5s linear  both 2s;
+    -o-animation: fadeInDown 1.5s linear  both 2s ;
+    animation: fadeInDown 1.5s linear  both 2s;
+}  #page5 .contact .work{
+    -webkit-animation: fadeInUp 1.5s linear  both 2s ;
+    -moz-animation: fadeInUp 1.5s linear  both 2s;
+    -ms-animation: fadeInUp 1.5s linear  both 2s;
+    -o-animation: fadeInUp 1.5s linear  both 2s ;
+    animation: fadeInUp 1.5s linear  both 2s;
+}  #page5 .myInf .qq b{
+    color: red;
+    -webkit-transition:all 2s  ;
+    -moz-transition: all 2s  ;
+    -ms-transition: all 2s  ;
+    -o-transition: all 2s  ;
+    -webkit-transition-delay:5.5s  ;
+    -moz-transition-delay:5.5s;
+    -ms-transition-delay: 5.5s ;
+    -o-transition-delay: 5.5s;
+    transition-delay: 5.5s;
+    -webkit-animation: flash 1.5s linear  both  3 5.5s;
+    -moz-animation: flash 1.5s linear  both 3 5.5s;
+    -ms-animation: flash 1.5s linear  both 3 5.5s;
+    -o-animation: flash 1.5s linear  both 3  5.5s;
+    animation: flash 1.5s linear  both 3 5.5s;
+
+}  #page5 .myInf img{
+    -webkit-animation: fadeInLeft 1.5s linear  both  ;
+    -moz-animation: fadeInLeft 1.5s linear  both ;
+    -ms-animation: fadeInLeft 1.5s linear  both ;
+    -o-animation: fadeInLeft 1.5s linear  both  ;
+    animation: fadeInLeft 1.5s linear  both ;
+
+}  #page5 .myInf span{
+    -webkit-animation: fadeInRight 1.5s linear  both  ;
+    -moz-animation: fadeInRight 1.5s linear  both ;
+    -ms-animation: fadeInRight 1.5s linear  both ;
+    -o-animation: fadeInRight 1.5s linear  both  ;
+    animation: fadeInRight 1.5s linear  both ;
+}  #page5 .myInf .tel img{animation-delay: 2.5s;  }  #page5 .myInf .tel span{animation-delay: 3s;  }  #page5 .myInf .qq img{animation-delay: 3.5s;  }  #page5 .myInf .qq span{animation-delay: 4s;  }  #page5 .myInf .emile img{animation-delay: 4.5s;  }  #page5 .myInf .emile span{animation-delay: 5s;  }  #page5 .contact img{
+    width: 2.8rem;
+    height: 2.8rem;
+    -webkit-transition:all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}  #page5 .contact .link{
+    opacity: 1;
+    color: red;
+    font-size: .5rem;
+    -webkit-transition:all 2s  ;
+    -moz-transition: all 2s  ;
+    -ms-transition: all 2s  ;
+    -o-transition: all 2s  ;
+    transition: all 2s  ;
+}
+/*联系页结束*/
+.slide6{
+    text-align: center;
+    background: url("../images/wall.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.slide6 p{
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-shadow:0.3rem 0.2rem rgba(0,0,0,0.5) ;
+}
+.slide6 img{
+    position: absolute;
+    top: 4rem;
+    left: 25%;
+    width: 3.5rem;
+    height: 3.5rem;
+    opacity: 0.8;
+    border: 0.3rem solid rgba(255,255,255,1);
+    border-radius: .5rem;
+    box-shadow: 0.6rem 1rem 0.3rem rgba(0,0,0,0.5);
+}
+@-webkit-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes myOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@-o-keyframes myOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@-moz-keyframes myOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@keyframes myOpacity {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@-webkit-keyframes mini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-o-keyframes mini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-moz-keyframes mini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes mini {
+    0% {
+       opacity: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes myMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-o-keyframes myMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-moz-keyframes myMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes myMini {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
