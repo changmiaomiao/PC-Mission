@@ -64,7 +64,7 @@
                 </div>
                 <ul class="skillContent">
                     <li class="colRed">熟练掌握HTML和CSS</li>
-                    <li>掌握 HTML5与CSS3新特性</li>
+                    <li>掌握 HTML5与CSS3</li>
                     <li class="colRed">熟练掌握Js与Jquery</li>
                     <li>熟练使用Angular</li>
                     <li class="colRed">了解node与git</li>
@@ -192,7 +192,13 @@
             music.style.opacity=1;
         })
     },1000);
-    music.addEventListener("click",function(){
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        music.load();
+    }, false);
+    // 监听手机摇动
+    window.addEventListener('shake', playM, false);
+    music.addEventListener("click",playM);
+    function playM(){
         if (play.paused){
             play.play();
             music.className = "music musicMove";
@@ -200,6 +206,6 @@
             play.pause();
             music.className = "music";
         }
-    });
+    };
 </script>
 </html>

@@ -9,16 +9,19 @@ html,body{
     height: 100%;
 }
 /*音乐*/
-.music {
+.music{
     width: 0.6rem;
     height: 0.6rem;
     position: absolute;
     top: 0.4rem;
     right: 0.4rem;
     z-index: 20;
+    opacity: 0;
+    background: url(../audio/music.svg) no-repeat;
+}
+.music{
     background: url(../images/music.png) no-repeat;
     background-size: 100% 100%;
-    opacity: 0;
 }
 .musicMove{
     -webkit-animation: revolve 1.6s infinite linear both;
@@ -26,70 +29,6 @@ html,body{
     -ms-animation: myRote 1.6s infinite linear both;
     -o-animation: myRote 1.6s infinite linear both;
     animation: myRote 1.6s infinite linear both;
-}
-@-webkit-keyframes myRote {
-    0%{
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@-o-keyframes myRote {
-    0%{
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@-moz-keyframes myRote {
-    0%{
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@keyframes myRote {
-    0%{
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
 }
 /*首页*/
 .slide1{
@@ -100,7 +39,6 @@ html,body{
     width:1rem;
     height:1rem;
 }
-
 .slide1 .fonts .cong{
     top: 1.5rem;
     left:42%;
@@ -127,11 +65,11 @@ html,body{
 }
 .slide1 .fonts .resume{
     position: absolute;
-    left: 30%;
+    left: 20%;
     top:3.8rem;
     width: 0.4rem;
     height: auto;
-    color: #ccc;
+    color: #eee;
     line-height: 0.5rem;
     font-size: 0.4rem;
 }
@@ -185,11 +123,14 @@ html,body{
     animation: mini 1.5s linear 1.5s  both;
 }
 #page1 .fonts .resume{
-    -webkit-animation: tran 1s linear 2s both;
-    -moz-animation: trans 1s linear 2s both;
-    -ms-animation: trans 1s linear 2s both;
-    -o-animation: trans 1s linear 2s both;
-    animation: trans 1s linear 2s both;
+    left: 35%;
+    top:3.8rem;
+    color:#6b6b6b ;
+    -webkit-transition:all 2s 1s;
+    -moz-transition: all 2s 1s;
+    -ms-transition: all 2s 1s;
+    -o-transition: all 2s 1s;
+    transition: all 2s 1s;
 }
 /*首页结束*/
 .skillTop {
@@ -563,11 +504,11 @@ html,body{
 #page5 .contact img{
     width: 2.8rem;
     height: 2.8rem;
-    -webkit-transition:all 2s  ;
-    -moz-transition: all 2s  ;
-    -ms-transition: all 2s  ;
-    -o-transition: all 2s  ;
-    transition: all 2s  ;
+    -webkit-transition:all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
 }
 #page5 .contact .link{
     opacity: 1;
@@ -603,7 +544,70 @@ html,body{
     border-radius: .5rem;
     box-shadow: 0.6rem 1rem 0.3rem rgba(0,0,0,0.5);
 }
-
+@-webkit-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes myRote {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 @-webkit-keyframes myOpacity {
     0% {
         opacity: 0;
@@ -782,46 +786,5 @@ html,body{
         -ms-transform: scale(1);
         -o-transform: scale(1);
         transform: scale(1);
-    }
-}
-@-webkit-keyframes trans {
-    0%{
-        color: #eee;
-        left: 30%;
-    }
-    100%{
-        left: 34%;
-        color: #6b6b6b;
-    }
-}
-@-o-keyframes trans {
-    0%{
-        color: #eee;
-        left: 30%;
-    }
-    100%{
-        left: 34%;
-        color: #6b6b6b;
-    }
-}
-@-moz-keyframes trans {
-    0%{
-        color: #eee;
-        left: 30%;
-    }
-    100%{
-        left: 34%;
-        color: #6b6b6b;
-    }
-
-}
-@keyframes trans {
-    0%{
-        color: #eee;
-        left: 30%;
-    }
-    100%{
-        left: 34%;
-        color: #6b6b6b;
     }
 }
