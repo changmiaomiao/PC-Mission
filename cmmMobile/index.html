@@ -130,7 +130,7 @@
                     <ul>
                         <li class="tel"><img src="images/tel.png" alt=""><span>18612047479</span></li>
                         <li class="qq">
-                            <img src="images/qq.png" alt=""><a href="mqqwpa://im/chat?chat_type=wpa&uin=940424841&version=1&src_type=web&web_src=oicqzone.com"> <span>940424841</span></a><b>点击聊天</b>
+                            <img src="images/qq.png" alt=""><a href="mqqwpa://im/chat?chat_type=wpa&uin=940424841&version=1&src_type=web&web_src=oicqzone.com"> <span>940424841</span><b>点击聊天</b></a>
                         </li>
                         <li class="emile"><img src="images/emile.png" alt=""><span>m18612047479@163.com</span></li>
                     </ul>
@@ -153,6 +153,10 @@
     var mySwiper = new Swiper(".swiper-container", {
         direction: "vertical",
         loop: true,
+        effect: 'fade',
+        fade: {
+            crossFade: true,
+        },
         lazyLoading: true,
         pagination: '.swiper-pagination',
         paginationHide: true,
