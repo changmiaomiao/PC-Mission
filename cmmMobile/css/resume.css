@@ -302,7 +302,7 @@ html,body{
 /*技能也结束*/
 .slide3 .me{
     position: absolute;
-    top:2.5rem;
+    top:2rem;
     left:25%;
     width: 50%;
     height: 3rem;
@@ -310,7 +310,7 @@ html,body{
 }
 .slide3 .myInfo{
     position: absolute;
-    top:6rem;
+    top:5.5rem;
     left: 20%;
     font-size: 0.42rem;
     color: #333;
