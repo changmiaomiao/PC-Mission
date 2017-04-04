@@ -200,8 +200,10 @@
 <script type="application/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="application/javascript">
     $(document).ready(function(){
+        var winHeight=window.innerHeight;
+        console.dir(winHeight);
         var $loop=$(".loop").height();
-        var H=$(".midTop").height()+500;
+        var midH=$(".midTop").height();
         var $eduTop=$("#edu").offset().top;
         var $socialTop=$("#social").offset().top;
         var $schoolTop=$("#school").offset().top;
@@ -212,21 +214,21 @@
             }else{
                 $(".content>.top").removeClass("Fixed")
             }
-            if(top>=$eduTop-100&&top<$eduTop+H){
+            if(top>=$eduTop-winHeight&&top<=$eduTop+midH){
                 $("#edu .midTop h2").addClass("sDown");
                 $("#edu .midTop p").addClass("sUp");
             }else{
                 $("#edu .midTop h2").removeClass("sDown");
                 $("#edu .midTop p").removeClass("sUp")
             }
-            if(top>$socialTop-100&&top<$socialTop+H){
+            if(top>$socialTop-winHeight&&top<=$socialTop+midH){
                 $("#social .midTop h2").addClass("sDown");
                 $("#social .midTop p").addClass("sUp")
             }else {
                 $("#social .midTop h2").removeClass("sDown");
                 $("#social .midTop p").removeClass("sUp")
             }
-            if(top>$schoolTop-100&&top<$schoolTop+H){
+            if(top>$schoolTop-winHeight&&top<=$schoolTop+midH){
                 $("#school .midTop h2").addClass("sDown");
                 $("#school .midTop p").addClass("sUp")
             }else{
