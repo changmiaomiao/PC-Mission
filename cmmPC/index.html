@@ -9,7 +9,7 @@
 <body>
 <div id="pagePiling">
     <!--首页-->
-    <div id="home" class=" center pp-section pp-table pp-easing">
+    <div id="home" class=" center pp-section pp-table pp-easing leaving">
             <img class="me" src="img/me.png" alt="常苗苗">
             <h1 class="name">常苗苗</h1>
             <p class="">每个人都是建造自己的工程师</p>
@@ -21,19 +21,19 @@
         <h2>项目经验</h2>
         <ul class="exps">
             <li class="one">
-                <img src="img/cm.png" alt="">
+                <img src="img/cm.png" alt="简历">
                 <p>移动端简历</p>
             </li>
             <li>
                 <a href="https://changmiaomiao.github.io/PC-Mission/ying/">
-                    <img src="img/ying.png" alt="">
+                    <img src="img/ying.png" alt="英广">
                     <p>英广健康论坛</p>
                 </a>
 
             </li>
             <li class="right">
                 <a href="https://changmiaomiao.github.io/-Little-game/puzzle/#">
-                    <img src="img/game.png" alt="">
+                    <img src="img/game.png" alt="小游戏">
                     <p>pc端的拼图小游戏</p>
                 </a>
             </li>
@@ -66,7 +66,8 @@
             <img src="img/weixin.png" alt="微信">
         </p>
         <p>tel:18612047479</p>
-        <p><a href="tencent://message/?uin=940424841&Site=fenmio&Menu=yes">qq:940424841</a></p>
+        <p><a class="QQ" href="tencent://message/?uin=940424841&Site=fenmio&Menu=yes">qq:940424841</a>
+        </p>
         <p><a href="mailto:940424841@qq.com">email:940424841@qq.com</a></p>
 
     </div>
@@ -79,8 +80,9 @@
 <script>
     $(document).ready(function() {
         var cenLis=$(".exps li");
+        var $width=$(window)[0].screen.availWidth;
         $('#pagePiling').pagepiling({
-            menu: null,
+            menu:  ['首页', '经验',"技术","教育","联系"],
             direction: 'vertical',
             verticalCentered: true,
             scrollingSpeed: 700,
@@ -92,25 +94,29 @@
                 'textColor': '#fff',
                 'bulletsColor': '#000',
                 'position': 'right',
-                'tooltips': ['首页', '经验',["技术"],["教育"],["联系"]]
+                'tooltips': ['首页', '经验',"技术","教育","联系"]
             },
             sectionSelector: '.section',
 
             //events
             onLeave: function(index, nextIndex, direction){
                 cenLis.fadeOut(0);
+                $(".center").addClass("leaving");
             },
             afterLoad: function(anchorLink, index){
+                $(".center").eq(index).removeClass("leaving");
                 if(index==2){
                     cenLis.slideDown(1000);
                 }
             },
             afterRender: function(){
-
+                if($width<960){
+                    console.log("1");
+                    $(".QQ").attr("href","mqqwpa://im/chat?chat_type=wpa&uin=940424841&version=1&src_type=web&web_src=oicqzone.com");
+                }
             }
         });
 
     });
 </script>
-
 </html>
