@@ -386,22 +386,12 @@ html,body{
     opacity: 0;
 }  .slide5 .myInf li span{
      left: 0.6rem; 
-}  .slide5 .myInf .tel{
+}.slide5 .myInf .tel{
     top:0;
 }  .slide5 .myInf .qq{
     top:0.8rem;
     color:#555 ;
-}  .slide5 .myInf .qq a{
-    color:#555 ;
-}  .slide5 .myInf .qq b{
-    position: absolute;
-    left: 2.5rem;
-    width: 2rem;
-    height: 0.36rem;
-    line-height: 0.36rem;
-    font-size:0.3rem;
-    color: white;
-}  .slide5 .myInf .emile{
+}.slide5 .myInf .emile{
     top:1.6rem;
 }  #page5 .contact .name{
     -webkit-animation: fadeInDown 1.5s linear  both 2s ;
@@ -415,24 +405,7 @@ html,body{
     -ms-animation: fadeInUp 1.5s linear  both 2s;
     -o-animation: fadeInUp 1.5s linear  both 2s ;
     animation: fadeInUp 1.5s linear  both 2s;
-}  #page5 .myInf .qq b{
-    color: red;
-    -webkit-transition:all 2s  ;
-    -moz-transition: all 2s  ;
-    -ms-transition: all 2s  ;
-    -o-transition: all 2s  ;
-    -webkit-transition-delay:5.5s  ;
-    -moz-transition-delay:5.5s;
-    -ms-transition-delay: 5.5s ;
-    -o-transition-delay: 5.5s;
-    transition-delay: 5.5s;
-    -webkit-animation: flash 1.5s linear  both  3 5.5s;
-    -moz-animation: flash 1.5s linear  both 3 5.5s;
-    -ms-animation: flash 1.5s linear  both 3 5.5s;
-    -o-animation: flash 1.5s linear  both 3  5.5s;
-    animation: flash 1.5s linear  both 3 5.5s;
-
-}  #page5 .myInf img{
+} #page5 .myInf img{
     -webkit-animation: fadeInLeft 1.5s linear  both  ;
     -moz-animation: fadeInLeft 1.5s linear  both ;
     -ms-animation: fadeInLeft 1.5s linear  both ;
