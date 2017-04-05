@@ -1,0 +1,185 @@
+body *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Lato,"Micrososerifft YaHei";
+    font-size: 2rem;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+@media  (max-width:980px){
+    html,body{
+        font-size: 2.2rem;
+    }
+    #experience .exps li img {
+        width: 8rem;
+        height: 8rem;
+    }
+    #pp-nav{
+        display: none;
+    }
+}
+.clear{
+    zoom:1;
+}
+.clear:after{
+    display:block;
+    content:"";
+    clear:both;
+    height:0;
+    visibility:hidden;
+}
+canvas{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+}
+#pagePiling{
+    overflow: hidden;
+    touch-action: none;
+    text-align: center;
+}
+.section.leaving{
+    background-color: wheat;
+}
+.center{
+    text-align: center;
+    padding:50px;
+    background-color: lightsteelblue;
+}
+#home{
+    z-index: 8;
+}
+#home .me{
+    width:10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 10px solid #eee;
+}
+#home .name,h2{
+    font-size: 3.6rem;
+    height:4rem;
+    line-height: 4rem;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #B0C4DE,2px 4px #eee;
+}
+#home p{
+    font-size: 1.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    opacity: 0.8;
+}
+#home  p a{
+    color: #1a808a;
+}
+.exps{
+    width: 100%;
+}
+.exps li{
+    text-align: center;
+    float: left;
+    width: 10rem;
+    height: 10rem;
+}
+.exps li.one{
+    width: 100%;
+}
+.exps li img{
+    width: 10rem;
+    height: 10rem;
+}
+.exps li p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+}
+.exps li a:hover p{
+    color: rebeccapurple;
+}
+.exps li.right{
+    float: right;
+}
+.center.myTran .exps li,.center.myTran .exps p{
+    -webkit-transition: myFadeIn 1s linear;
+    -moz-transition: myFadeIn 1s linear;
+    -ms-transition: myFadeIn 1s linear;
+    -o-transition: myFadeIn 1s linear;
+    transition: myFadeIn 1s linear;
+}
+.center.myTran .exps p{
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
+}
+.conSkills li,.conSkills li span{
+    font-size: 1.2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+.conSkills li span{
+    /*display: inline-block;*/
+    margin: 1rem;
+    padding:0.2rem  0.4rem   ;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+}
+.conSkills li span.tar{
+    background-color: rgba(0,0,0,0.5);
+}
+#edu p{
+    font-size: 1.2rem;
+    color: #eee;
+    margin-top: 1rem;
+}
+#edu p.school{
+    font-size: 1.8rem;
+    color:white;
+    font-weight: 900;
+}
+#edu p span{
+    font-weight: bold;
+    color: white;
+}
+#follow p{
+    font-size: 1.5rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    color: white;
+}
+#follow p a{
+    color: #1a808a;
+}
+#follow p.wx{
+    height: 8rem;
+}
+#follow p.wx img{
+    width: 8rem;
+    height: 8rem;
+}
+@keyframes myTran {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

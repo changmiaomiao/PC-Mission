@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常苗苗简历</title>
+    <link rel="stylesheet" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="pagePiling">
+    <!--首页-->
+    <div id="home" class=" center pp-section pp-table pp-easing">
+            <img class="me" src="img/me.png" alt="常苗苗">
+            <h1 class="name">常苗苗</h1>
+            <p class="">每个人都是建造自己的工程师</p>
+            <p>求职：前端工程师</p>
+            <p><a href="mailto:940424841@qq.com">940424841@qq.com</a></p>
+
+    </div>
+    <div id="experience" class="center pp-section pp-table pp-easing ">
+        <h2>项目经验</h2>
+        <ul class="exps">
+            <li class="one">
+                <img src="img/cm.png" alt="">
+                <p>移动端简历</p>
+            </li>
+            <li>
+                <a href="https://changmiaomiao.github.io/PC-Mission/ying/">
+                    <img src="img/ying.png" alt="">
+                    <p>英广健康论坛</p>
+                </a>
+
+            </li>
+            <li class="right">
+                <a href="https://changmiaomiao.github.io/-Little-game/puzzle/#">
+                    <img src="img/game.png" alt="">
+                    <p>pc端的拼图小游戏</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="skills" class="center pp-section pp-table pp-easing">
+        <h2>我的技能</h2>
+        <ul class="conSkills">
+            <li><span class="tar">PhotoShop</span><span class="tar">HTML</span><span class="tar">CSS</span></li>
+            <li><span>HTML5</span><span>CSS3</span></li>
+            <li><span class="tar">JavaScript</span><span class="tar">jQuery</span><span>Bootstrap</span></li>
+            <li>了解<span>Angular</span><span>vue</span><span>Node</span></li>
+        </ul>
+    </div>
+    <div id="edu" class="center pp-section pp-easing pp-table">
+        <h2>教育背景</h2>
+        <p class="school">郑州工业应用技术学院</p>
+        <p>时间：2013.09-2017.07</p>
+        <p>专业：通信工程 <span>（本科）</span></p>
+        <p>
+            大学四年的青春时光在我身上没能留下什么绚丽的色彩，如今的我在社会上寸步难行，有悔恨的心，但也有悔改的决心。前方的路哪怕充满荆棘，但我仍坚信会有雨过天晴。相信如今的我深深的理解了“活到老学到老”的真谛。明白的不知玩能带给我快乐，学习同样也能，而且还能带来自信。
+        </p>
+        <p>
+            在这里告诉将来的我，<span>勿忘初心</span>！
+        </p>
+    </div>
+    <div id="follow" class="center pp-section pp-easing pp-table">
+        <h2>联系方式</h2>
+        <p class="wx">
+            <img src="img/weixin.png" alt="微信">
+        </p>
+        <p>tel:18612047479</p>
+        <p><a href="tencent://message/?uin=940424841&Site=fenmio&Menu=yes">qq:940424841</a></p>
+        <p><a href="mailto:940424841@qq.com">email:940424841@qq.com</a></p>
+
+    </div>
+</div>
+<div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.pagepiling.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var cenLis=$(".exps li");
+        $('#pagePiling').pagepiling({
+            menu: null,
+            direction: 'vertical',
+            verticalCentered: true,
+            scrollingSpeed: 700,
+            easing: 'swing',
+            loopBottom: true,
+            loopTop: true,
+            css3: true,
+            navigation: {
+                'textColor': '#fff',
+                'bulletsColor': '#000',
+                'position': 'right',
+                'tooltips': ['首页', '经验',["技术"],["教育"],["联系"]]
+            },
+            sectionSelector: '.section',
+
+            //events
+            onLeave: function(index, nextIndex, direction){
+                cenLis.fadeOut(0);
+            },
+            afterLoad: function(anchorLink, index){
+                if(index==2){
+                    cenLis.slideDown(1000);
+                }
+            },
+            afterRender: function(){
+
+            }
+        });
+
+    });
+</script>
+
+</html>
