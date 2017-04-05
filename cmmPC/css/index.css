@@ -3,9 +3,11 @@ body *{
     padding:0;
     box-sizing: border-box;
 }
-body{
+body,html{
+    width: 100%;
+    height: 100%;
     font-family: Lato,"Micrososerifft YaHei";
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 ul,ol,li{
     list-style: none;
@@ -19,6 +21,7 @@ a{
 @media (max-device-width:960px){
     html,body{
         font-size: 2.2rem;
+
     }
     #experience .exps li img {
         width: 8rem;
@@ -30,7 +33,7 @@ a{
     #pp-nav{
         display: none;
     }
-    .center{
+    div.center{
         padding: 50px;
     }
 }
