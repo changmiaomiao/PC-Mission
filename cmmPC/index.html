@@ -22,18 +22,18 @@
         <ul class="exps">
             <li class="one">
                 <img src="img/cm.png" alt="简历">
-                <p>移动端简历</p>
+                <a class="myResume" href=""><p>移动端简历</p></a>
             </li>
             <li>
-                <a href="https://changmiaomiao.github.io/PC-Mission/ying/">
                     <img src="img/ying.png" alt="英广">
+                <a href="https://changmiaomiao.github.io/PC-Mission/ying/">
                     <p>英广健康论坛</p>
                 </a>
 
             </li>
             <li class="right">
-                <a href="https://changmiaomiao.github.io/-Little-game/puzzle/#">
                     <img src="img/game.png" alt="小游戏">
+                <a href="https://changmiaomiao.github.io/-Little-game/puzzle/#">
                     <p>pc端的拼图小游戏</p>
                 </a>
             </li>
@@ -82,7 +82,7 @@
         var cenLis=$(".exps li");
         var $width=$(window)[0].screen.availWidth;
         $('#pagePiling').pagepiling({
-            menu:  ['首页', '经验',"技术","教育","联系"],
+            menu:  null,
             direction: 'vertical',
             verticalCentered: true,
             scrollingSpeed: 700,
@@ -111,8 +111,8 @@
             },
             afterRender: function(){
                 if($width<960){
-                    console.log("1");
                     $(".QQ").attr("href","mqqwpa://im/chat?chat_type=wpa&uin=940424841&version=1&src_type=web&web_src=oicqzone.com");
+                    $(".myResume").attr("href","https://changmiaomiao.github.io/PC-Mission/cmm/");
                 }
             }
         });
