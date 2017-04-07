@@ -80,7 +80,8 @@
 <script>
     $(document).ready(function () {
         var cenLis = $(".exps li");
-        var ary = [], R = 0, v = Math.cos, u = Math.PI * 2, that = null;
+        var center=$(".center");
+        var ary = [], R = 0, v = Math.cos, u = Math.PI * 2, _true = true;
         var canvas = $("#canvas");
         var ctx = canvas[0].getContext('2d');
         var $width = $(window)[0].screen.availWidth;
@@ -104,12 +105,17 @@
             //events
             onLeave: function (index, nextIndex, direction) {
                 cenLis.fadeOut(0);
-                $(".center").addClass("leaving");
+                center.addClass("leaving");
             },
             afterLoad: function (anchorLink, index) {
-                $(".center").eq(index).removeClass("leaving");
+                center.eq(index).removeClass("leaving");
                 if (index == 2) {
                     cenLis.slideDown(1000);
+                }
+                if(index==1||index==center.length){
+                    canvas.css("zIndex",0);
+                }else{
+                    canvas.css("zIndex",10);
                 }
             },
             afterRender: function () {
@@ -121,10 +127,10 @@
         });
         $.extend({
             setIn: function () {
-                canvas.mousemove(function (e) {
+                $(document).mousemove(function (e) {
                     new $.canvas.Ball(e.clientX, e.clientY);
                 });
-                canvas[0].addEventListener("touchend",function(e){
+                document.addEventListener("touchend",function(e){
                     new $.canvas.Ball(e.clientX, e.clientY);
                 });
                 var w = window.innerWidth,
@@ -167,7 +173,8 @@
                                 return;
                             }
                             ctx.beginPath();
-                            ctx.arc(_this.x, _this.y, _this.r, 0, u, false);
+                            _true=!_true;
+                            ctx.arc(_this.x, _this.y, _this.r, 0, u/2, _true);
                             ctx.fillStyle = _this.color;
                             ctx.fill();
                             return this;
