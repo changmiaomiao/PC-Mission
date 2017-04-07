@@ -51,9 +51,7 @@ canvas{
     position: absolute;
     top:0;
     left:0;
-    z-index:-1;
-    width: 100%;
-    height: 100%;
+    z-index:10;
 }
 #pagePiling{
     overflow: hidden;
@@ -99,7 +97,7 @@ canvas{
 }
 .exps{
     width: 100%;
-    padding: 0 10rem;
+    padding: 0 8rem;
 }
 .exps li{
     text-align: center;

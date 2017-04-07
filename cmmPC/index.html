@@ -10,11 +10,11 @@
 <div id="pagePiling">
     <!--首页-->
     <div id="home" class=" center pp-section pp-table pp-easing leaving">
-            <img class="me" src="img/me.png" alt="常苗苗">
-            <h1 class="name">常苗苗</h1>
-            <p class="">每个人都是建造自己的工程师</p>
-            <p>求职：前端工程师</p>
-            <p><a href="mailto:940424841@qq.com">940424841@qq.com</a></p>
+        <img class="me" src="img/me.png" alt="常苗苗">
+        <h1 class="name">常苗苗</h1>
+        <p class="">每个人都是建造自己的工程师</p>
+        <p>求职：前端工程师</p>
+        <p><a href="mailto:940424841@qq.com">940424841@qq.com</a></p>
 
     </div>
     <div id="experience" class="center pp-section pp-table pp-easing ">
@@ -25,14 +25,14 @@
                 <a class="myResume" href=""><p>移动端简历</p></a>
             </li>
             <li>
-                    <img src="img/ying.png" alt="英广">
+                <img src="img/ying.png" alt="英广">
                 <a href="https://changmiaomiao.github.io/PC-Mission/ying/">
                     <p>英广健康论坛</p>
                 </a>
 
             </li>
             <li class="right">
-                    <img src="img/game.png" alt="小游戏">
+                <img src="img/game.png" alt="小游戏">
                 <a href="https://changmiaomiao.github.io/-Little-game/puzzle/#">
                     <p>pc端的拼图小游戏</p>
                 </a>
@@ -69,8 +69,8 @@
         <p><a class="QQ" href="tencent://message/?uin=940424841&Site=fenmio&Menu=yes">qq:940424841</a>
         </p>
         <p><a href="mailto:940424841@qq.com">email:940424841@qq.com</a></p>
-
     </div>
+    <canvas id="canvas"></canvas>
 </div>
 <div>
 </div>
@@ -78,11 +78,14 @@
 <script src="js/jquery.js"></script>
 <script src="js/jquery.pagepiling.min.js"></script>
 <script>
-    $(document).ready(function() {
-        var cenLis=$(".exps li");
-        var $width=$(window)[0].screen.availWidth;
+    $(document).ready(function () {
+        var cenLis = $(".exps li");
+        var ary = [], R = 0, v = Math.cos, u = Math.PI * 2, that = null;
+        var canvas = $("#canvas");
+        var ctx = canvas[0].getContext('2d');
+        var $width = $(window)[0].screen.availWidth;
         $('#pagePiling').pagepiling({
-            menu:  null,
+            menu: null,
             direction: 'vertical',
             verticalCentered: true,
             scrollingSpeed: 700,
@@ -94,29 +97,88 @@
                 'textColor': '#fff',
                 'bulletsColor': '#000',
                 'position': 'right',
-                'tooltips': ['首页', '经验',"技术","教育","联系"]
+                'tooltips': ['首页', '经验', "技术", "教育", "联系"]
             },
             sectionSelector: '.section',
 
             //events
-            onLeave: function(index, nextIndex, direction){
+            onLeave: function (index, nextIndex, direction) {
                 cenLis.fadeOut(0);
                 $(".center").addClass("leaving");
             },
-            afterLoad: function(anchorLink, index){
+            afterLoad: function (anchorLink, index) {
                 $(".center").eq(index).removeClass("leaving");
-                if(index==2){
+                if (index == 2) {
                     cenLis.slideDown(1000);
                 }
             },
-            afterRender: function(){
-                if($width<960){
-                    $(".QQ").attr("href","mqqwpa://im/chat?chat_type=wpa&uin=940424841&version=1&src_type=web&web_src=oicqzone.com");
-                    $(".myResume").attr("href","https://changmiaomiao.github.io/PC-Mission/cmm/");
+            afterRender: function () {
+                if ($width < 960) {
+                    $(".QQ").attr("href", "mqqwpa://im/chat?chat_type=wpa&uin=940424841&version=1&src_type=web&web_src=oicqzone.com");
+                    $(".myResume").attr("href", "https://changmiaomiao.github.io/PC-Mission/cmm/");
                 }
             }
         });
+        $.extend({
+            setIn: function () {
+                canvas.mousemove(function (e) {
+                    new $.canvas.Ball(e.clientX, e.clientY);
+                });
+                canvas[0].addEventListener("touchend",function(e){
+                    new $.canvas.Ball(e.clientX, e.clientY);
+                });
+                var w = window.innerWidth,
+                        h = window.innerHeight;
+                canvas[0].width = w;
+                canvas[0].height = h;
+                window.setInterval(function () {
+                    ctx.clearRect(0, 0, w, h);
+                    for (var i = 0; i < ary.length; i++) {
+                        ary[i].pro.update().render();
+                    }
+                }, 20)
+            },
+            canvas: {
+                Ball: function (x, y, r, color) {
+                    var _this = this;
+                    this.x = x;
+                    this.y = y;
+                    this.r = r || 30;
+                    R -= u / -50;
+                    this.color = color || "#" + (v(R) * 127 + 128 << 16 | v(R + u / 3) * 127 + 128 << 8 | v(R + u / 3 * 2) * 127 + 128).toString(16);
+                    this.dx = Math.random() * 10 - 5;
+                    this.dy = Math.random() * 10 - 5;
+                    if (ary.length < 30) {
+                        ary.push(this);
+                        this.dr = Math.random() + 0.3;
+                    }
+                    this.pro = {
+                        update: function () {
+                            _this.x += _this.dx;
+                            _this.y += _this.dy;
+                            _this.r -= _this.dr;
+                            return this;
+                        },
+                        render: function () {
+                            if (_this.r < 0) {
+                                for (var i = 0; i < ary.length; i++) {
+                                    if (ary[i] === _this)  ary.splice(i, 1);
+                                }
+                                return;
+                            }
+                            ctx.beginPath();
+                            ctx.arc(_this.x, _this.y, _this.r, 0, u, false);
+                            ctx.fillStyle = _this.color;
+                            ctx.fill();
+                            return this;
+                        }
+                    };
+                }
+            }
+        });
+        $.setIn();
 
     });
+
 </script>
 </html>
