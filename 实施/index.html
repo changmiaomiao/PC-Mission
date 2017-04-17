@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常苗苗简历</title>
+    <link rel="stylesheet" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="pagePiling">
+    <!--首页-->
+    <div id="home" class=" center pp-section pp-table pp-easing leaving">
+        <img class="me" src="img/me.png" alt="常苗苗">
+        <h1 class="name">常苗苗</h1>
+        <p class="">每个人都是建造自己的工程师</p>
+        <p>求职：实施顾问</p>
+        <p><a href="mailto:940424841@qq.com">940424841@qq.com</a></p>
+
+    </div>
+    <div id="skills" class="center pp-section pp-table pp-easing">
+        <h2>我的技能</h2>
+        <ul class="conSkills">
+            <li><span>word</span><span>excel</span><span>ppt</span></li>
+            <li><span class="tar">PhotoShop</span><span class="tar">HTML</span><span class="tar">CSS</span></li>
+            <li><span>HTML5</span><span>CSS3</span></li>
+            <li><span class="tar">JavaScript</span><span class="tar">jQuery</span></li>
+        </ul>
+    </div>
+    <div id="edu" class="center pp-section pp-easing pp-table">
+        <h2>教育背景</h2>
+        <p class="school">郑州工业应用技术学院</p>
+        <p>时间：2013.09-2017.07</p>
+        <p>专业：通信工程 <span>（本科）</span></p>
+        <p>
+            大学四年的青春时光在我身上没能留下什么绚丽的色彩，如今的我在社会上寸步难行，有悔恨的心，但也有悔改的决心。前方的路哪怕充满荆棘，但我仍坚信会有雨过天晴。相信如今的我深深的理解了“活到老学到老”的真谛。明白的不知玩能带给我快乐，学习同样也能，而且还能带来自信。
+        </p>
+        <p>
+            在这里告诉将来的我，<span>勿忘初心</span>！
+        </p>
+    </div>
+    <div id="follow" class="center pp-section pp-easing pp-table">
+        <h2>联系方式</h2>
+        <p class="wx">
+            <img src="img/weixin.png" alt="微信">
+        </p>
+        <p>tel:18612047479</p>
+        <p><a class="QQ" href="tencent://message/?uin=940424841&Site=fenmio&Menu=yes">qq:940424841</a>
+        </p>
+        <p><a href="mailto:940424841@qq.com">email:940424841@qq.com</a></p>
+    </div>
+    <canvas id="canvas"></canvas>
+</div>
+<div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.pagepiling.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var center=$(".center");
+        var ary = [], R = 0, v = Math.cos, u = Math.PI * 2, _true = true;
+        var canvas = $("#canvas");
+        var ctx = canvas[0].getContext('2d');
+        var $width = $(window)[0].screen.availWidth;
+        $('#pagePiling').pagepiling({
+            menu: null,
+            direction: 'vertical',
+            verticalCentered: true,
+            scrollingSpeed: 700,
+            easing: 'swing',
+            loopBottom: true,
+            loopTop: true,
+            css3: true,
+            navigation: {
+                'textColor': '#fff',
+                'bulletsColor': '#000',
+                'position': 'right',
+                'tooltips': ['首页', '经验', "技术", "教育", "联系"]
+            },
+            sectionSelector: '.section',
+
+            //events
+            onLeave: function (index, nextIndex, direction) {
+                center.addClass("leaving");
+            },
+            afterLoad: function (anchorLink, index) {
+                center.eq(index).removeClass("leaving");
+                if(index==1||index==center.length){
+                    canvas.css("zIndex",0);
+                }else{
+                    canvas.css("zIndex",10);
+                }
+            },
+            afterRender: function () {
+                if ($width < 960) {
+                    $(".QQ").attr("href", "mqqwpa://im/chat?chat_type=wpa&uin=940424841&version=1&src_type=web&web_src=oicqzone.com");
+                    $(".myResume").attr("href", "https://changmiaomiao.github.io/PC-Mission/cmm/");
+                }
+            }
+        });
+        $.extend({
+            setIn: function () {
+                $(document).mousemove(function (e) {
+                    new $.canvas.Ball(e.clientX, e.clientY);
+                });
+                document.addEventListener("touchend",function(e){
+                    new $.canvas.Ball(e.clientX, e.clientY);
+                });
+                var w = window.innerWidth,
+                        h = window.innerHeight;
+                canvas[0].width = w;
+                canvas[0].height = h;
+                window.setInterval(function () {
+                    ctx.clearRect(0, 0, w, h);
+                    for (var i = 0; i < ary.length; i++) {
+                        ary[i].pro.update().render();
+                    }
+                }, 20)
+            },
+            canvas: {
+                Ball: function (x, y, r, color) {
+                    var _this = this;
+                    this.x = x;
+                    this.y = y;
+                    this.r = r || 30;
+                    R -= u / -50;
+                    this.color = color || "#" + (v(R) * 127 + 128 << 16 | v(R + u / 3) * 127 + 128 << 8 | v(R + u / 3 * 2) * 127 + 128).toString(16);
+                    this.dx = Math.random() * 10 - 5;
+                    this.dy = Math.random() * 10 - 5;
+                    if (ary.length < 30) {
+                        ary.push(this);
+                        this.dr = Math.random() + 0.3;
+                    }
+                    this.pro = {
+                        update: function () {
+                            _this.x += _this.dx;
+                            _this.y += _this.dy;
+                            _this.r -= _this.dr;
+                            return this;
+                        },
+                        render: function () {
+                            if (_this.r < 0) {
+                                for (var i = 0; i < ary.length; i++) {
+                                    if (ary[i] === _this)  ary.splice(i, 1);
+                                }
+                                return;
+                            }
+                            ctx.beginPath();
+                            _true=!_true;
+                            ctx.arc(_this.x, _this.y, _this.r, 0, u/2, _true);
+                            ctx.fillStyle = _this.color;
+                            ctx.fill();
+                            return this;
+                        }
+                    };
+                }
+            }
+        });
+        $.setIn();
+
+    });
+
+</script>
+</html>

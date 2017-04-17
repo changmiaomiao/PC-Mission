@@ -1,0 +1,142 @@
+body *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: Lato,"Micrososerifft YaHei";
+    font-size: 1.2rem;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+@media (max-device-width:960px){
+    html,body{
+        font-size: 2.2rem;
+    }
+    #pp-nav{
+        display: none;
+    }
+    div.center{
+        padding: 50px;
+    }
+}
+.clear{
+    zoom:1;
+}
+.clear:after{
+    display:block;
+    content:"";
+    clear:both;
+    height:0;
+    visibility:hidden;
+}
+canvas{
+    position: absolute;
+    top:0;
+    left:0;
+}
+#pagePiling{
+    overflow: hidden;
+    touch-action: none;
+    text-align: center;
+}
+.center.leaving{
+    background-color: lightsteelblue;
+}
+.center{
+    text-align: center;
+    padding:50px 200px;
+    background-color: greenyellow;
+
+}
+#home{
+    z-index: 8;
+}
+#home .me{
+    width:10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 10px solid #eee;
+}
+#home .name,h2{
+    font-size: 3.6rem;
+    height:4rem;
+    line-height: 4rem;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #B0C4DE,2px 4px #eee;
+}
+#home p{
+    font-size: 1.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    opacity: 0.8;
+}
+#home  p a{
+    color: #1a808a;
+}
+.conSkills li,.conSkills li span{
+    font-size: 1.2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+.conSkills li span{
+    /*display: inline-block;*/
+    margin: 1rem;
+    padding:0.2rem  0.4rem   ;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+}
+.conSkills li span.tar{
+    background-color: rgba(0,0,0,0.5);
+}
+#edu p{
+    font-size: 1.2rem;
+    color: #eee;
+    margin-top: 1rem;
+}
+#edu p.school{
+    font-size: 1.8rem;
+    color:white;
+    font-weight: 900;
+}
+#edu p span{
+    font-weight: bold;
+    color: white;
+}
+#follow p{
+    font-size: 1.5rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    color: white;
+}
+#follow p a{
+    color: #1a808a;
+}
+#follow p.wx{
+    height: 8rem;
+}
+#follow p.wx img{
+    width: 8rem;
+    height: 8rem;
+}
+@keyframes myTran {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
